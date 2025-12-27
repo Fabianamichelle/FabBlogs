@@ -28,33 +28,40 @@
         <main class="mx-auto flex max-w-5xl flex-col gap-10 px-4 pb-16 pt-12 sm:px-6 sm:pb-20 sm:pt-16">
             <section class="grid gap-8 lg:grid-cols-5 lg:items-center lg:gap-10">
                 <div class="lg:col-span-3 space-y-4">
-                    <x-fab-photo-icon class="rounded-3xl border border-zinc-200 shadow-sm dark:border-zinc-800" />
-                    <p class="inline-flex items-center gap-2 rounded-full border border-pink-200/70 bg-white/80 px-3 py-1 text-xs font-semibold text-pink-600 shadow-sm backdrop-blur dark:border-pink-900/40 dark:bg-zinc-950/70 dark:text-pink-300">
-                        ✿ Hi I’m Fabiana!
+                    <div class="display:inline-block gap-4 lg:flex lg:items-center">
+                    <x-fab-photo-icon class="rounded-3xl border border-zinc-200 shadow-sm dark:border-zinc-800 display:inline-block" />
+                    <p class="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
+                       Hi I’m Fabiana!
                     </p>
-                    <h1 class="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
+                    </div>
+                    <h1 class="text-xl font-medium text-zinc-600 dark:text-white">
                         Junior Software Engineer 
                     </h1>
                     <p class="text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
                         
                     </p>
-                    <div class="flex flex-wrap items-center gap-3">
-                        <span class="inline-flex items-center gap-2 rounded-full bg-pink-500/10 px-3 py-1.5 text-sm font-semibold text-pink-700 ring-1 ring-pink-200 dark:text-pink-300 dark:ring-pink-900/50">
-                            🌸 Frontend joy: Vue, Livewire, Tailwind
-                        </span>
-                        <span class="inline-flex items-center gap-2 rounded-full bg-fuchsia-500/10 px-3 py-1.5 text-sm font-semibold text-fuchsia-700 ring-1 ring-fuchsia-200 dark:text-fuchsia-200 dark:ring-fuchsia-900/50">
-                            💻 Backend calm: Laravel, APIs
-                        </span>
-                        <span class="inline-flex items-center gap-2 rounded-full bg-sky-500/10 px-3 py-1.5 text-sm font-semibold text-sky-700 ring-1 ring-sky-200 dark:text-sky-200 dark:ring-sky-900/50">
-                            ✨ Obsessed with clean DX
-                        </span>
+                    <div>
+                       <h3>
+                         Welcome to my site! I have been dreaming about having a place to track my learning and I thought why not share it with you!
+                         Hopefully you will find something useful here. I decided to make this site a bit user friendly so you can share your thoughts by commenting on my 
+                         posts or reaching out to me via email if you have any questions or just want to say hi!
+                        <br/><br/>
+                         I love AI but my posts are 100% written by me with no AI assistance. On my spare time, I love reading books! I am starting a new challenge for 2026, so 
+                         take a look at my  <a href="https://fabblogs.com/books" class="text-fuchsia-600 hover:underline">book log</a>. I am recently married as of July 2025, and I 
+                         have 3 daughters that keep me on my toes! I own a dog named Prince who is the sassest and sweetest bulldog you will ever meet. I am also in my last year of 
+                         college pursing a double major in Bachelors in Business Administration and Applied Computer Science.
+                        <br/><br/>
+                        You can expect posts about my learning journey in software engineering, tips and tricks I pick up along the way, and maybe some personal stories too. I will never
+                        make you pay for anything on this site, everything is free and always will be. If you want to support me, consider subscribing to my newsletter where I share exclusive content and updates.
+                        <br/><br/>
+                        Enjoy your stay and happy reading!
+                       </h3>
+
+                        
                     </div>
                     <div class="flex flex-wrap gap-3">
                         <a href="mailto:{{ config('mail.from.address') ?? 'hello@example.com' }}" class="inline-flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
                             💌 Say hello
-                        </a>
-                        <a href="{{ route('home') }}#newsletter" class="inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold text-zinc-700 ring-1 ring-zinc-200 hover:bg-zinc-50 dark:text-zinc-200 dark:ring-zinc-800 dark:hover:bg-white/5">
-                            📰 Subscribe to updates
                         </a>
                     </div>
                 </div>
@@ -74,35 +81,16 @@
 
                             <div class="space-y-3 text-sm">
                                 <p>♡ You want someone who makes mistakes because that's what it takes to learn</p>
-                                <p>☆ Someone who simplifies unglamourous learning</p>
-                                <p>☕ A safe space to grow with a community with people like you</p>
+                                <p>☆ Someone who simplifies tedious concepts</p>
+                                <p>☕ A safe space to grow with a community of people like you</p>
                             </div>
-                            <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-zinc-800 dark:text-zinc-200">
-                                <span class="rounded-xl bg-pink-500/10 px-3 py-2 ring-1 ring-pink-200 dark:ring-pink-900/50">UI polish</span>
-                                <span class="rounded-xl bg-fuchsia-500/10 px-3 py-2 ring-1 ring-fuchsia-200 dark:ring-fuchsia-900/50">API design</span>
-                                <span class="rounded-xl bg-sky-500/10 px-3 py-2 ring-1 ring-sky-200 dark:ring-sky-900/50">DX tooling</span>
-                                <span class="rounded-xl bg-emerald-500/10 px-3 py-2 ring-1 ring-emerald-200 dark:ring-emerald-900/50">Mentoring</span>
+                            <div>
+                                <a href="{{ route('home') }}#newsletter" class="inline-flex items-center gap-2 rounded-lg bg-fuchsia-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-fuchsia-500">
+                                    📰 Subscribe to updates
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section class="grid gap-6 lg:grid-cols-3">
-                <div class="rounded-2xl border border-zinc-200 bg-white/80 p-5 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/70">
-                    <p class="text-xs font-semibold uppercase tracking-wide text-pink-500">Currently</p>
-                    <h2 class="mt-2 text-lg font-semibold text-zinc-900 dark:text-white">Shipping calm interfaces</h2>
-                    <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Designing flows that feel comforting and easy—even on a Monday morning.</p>
-                </div>
-                <div class="rounded-2xl border border-zinc-200 bg-white/80 p-5 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/70">
-                    <p class="text-xs font-semibold uppercase tracking-wide text-fuchsia-500">Learning</p>
-                    <h2 class="mt-2 text-lg font-semibold text-zinc-900 dark:text-white">Advanced animation</h2>
-                    <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Micro-interactions with a kawaii twist—without sacrificing performance.</p>
-                </div>
-                <div class="rounded-2xl border border-zinc-200 bg-white/80 p-5 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/70">
-                    <p class="text-xs font-semibold uppercase tracking-wide text-emerald-500">Community</p>
-                    <h2 class="mt-2 text-lg font-semibold text-zinc-900 dark:text-white">Mentoring juniors</h2>
-                    <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Pairing, code reviews, and helping new devs find their spark.</p>
                 </div>
             </section>
         </main>

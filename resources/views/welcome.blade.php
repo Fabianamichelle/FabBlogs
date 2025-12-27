@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
         @include('partials.head', ['title' => 'Fabblogs'])
-        <meta name="description" content="Fabblogs is a personal blog for writing, learning, and sharing ideas — built with Laravel." />
+        <meta name="description" content="Fabblogs is a personal blog for writing, learning, and sharing ideas" />
     </head>
     <body class="min-h-screen bg-white antialiased text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
         <a
@@ -15,10 +15,9 @@
         <header class="sticky top-0 z-40 border-b border-zinc-200/60 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/70">
             <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
                 <a href="{{ route('home') }}" class="flex items-center gap-3" wire:navigate>
-                    <span class="grid size-9 place-items-center rounded-xl bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white shadow-sm ring-1 ring-black/5">
+                    <span class="grid size-10 place-items-center">
                         <x-app-logo-icon class="size-6 fill-current text-white" />
                     </span>
-                    <span class="text-sm font-semibold tracking-tight">Fabblogs</span>
                 </a>
 
                 <nav class="hidden items-center gap-6 text-sm text-zinc-700 dark:text-zinc-300 md:flex" aria-label="Primary">

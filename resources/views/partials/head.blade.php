@@ -3,8 +3,10 @@
 
 <title>{{ $title ?? config('app.name') }}</title>
 
-<link rel="icon" href="/storage/Fab.jpeg" type="image/jpeg">
-<link rel="apple-touch-icon" href="/storage/Fab.jpeg">
+<link rel="icon" type="Image/x-icon" href="/storage/Engineericon.jpeg" sizes="32x32 16x16 180x180" />
+
+
+
 
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
