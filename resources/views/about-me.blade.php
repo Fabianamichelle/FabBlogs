@@ -14,10 +14,9 @@
         <header class="sticky top-0 z-40 border-b border-zinc-200/60 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/70">
             <div class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
                 <a href="{{ route('home') }}" class="flex items-center gap-3">
-                    <span class="grid size-10 place-items-center rounded-2xl bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white shadow-sm ring-1 ring-black/5">
+                    <span class="grid size-10 place-items-center">
                         <x-app-logo-icon class="size-6 fill-current text-white" />
                     </span>
-                    <span class="text-sm font-semibold tracking-tight">Fabblogs</span>
                 </a>
                 <a href="{{ route('home') }}" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-3 py-2 text-xs font-semibold text-white shadow-sm ring-1 ring-black/5 hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
                     ← Back home
