@@ -1,0 +1,1 @@
+<img src="{{ asset('/storage/fabselfie.jpeg') }}" alt="Fab Photo" width="100" height="100">

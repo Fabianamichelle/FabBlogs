@@ -22,9 +22,9 @@
                 </a>
 
                 <nav class="hidden items-center gap-6 text-sm text-zinc-700 dark:text-zinc-300 md:flex" aria-label="Primary">
-                    <a href="#features" class="hover:text-zinc-900 dark:hover:text-white">Features</a>
-                    <a href="#workflow" class="hover:text-zinc-900 dark:hover:text-white">Workflow</a>
-                    <a href="#newsletter" class="hover:text-zinc-900 dark:hover:text-white">Newsletter</a>
+                    <a href="{{ route('about.me') }}" class="hover:text-zinc-900 dark:hover:text-white">About Me</a>
+                    <a href="#workflow" class="hover:text-zinc-900 dark:hover:text-white">What I'm up to?</a>
+                    <a href="#newsletter" class="hover:text-zinc-900 dark:hover:text-white">Subscribe</a>
                 </nav>
 
                 <div class="hidden items-center gap-2 md:flex">
