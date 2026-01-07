@@ -3,8 +3,17 @@
     <head>
         @include('partials.head', ['title' => 'Fabblogs'])
         <meta name="description" content="Fabblogs is a personal blog for writing, learning, and sharing ideas" />
-    </head>
-    <body class="min-h-screen bg-white antialiased text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+    </head> 
+    <script>
+        window.addEventListener('text-color-changed', e => {
+            const c = e.detail?.color || localStorage.getItem('textColor');
+            if (!c) return;
+            document.documentElement.style.setProperty('--text-color-900', `var(--color-${c}-900)`);
+            document.documentElement.style.setProperty('--text-color-700', `var(--color-${c}-700)`);
+        });
+    </script>
+    <body class="min-h-screen bg-white antialiased text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100"
+  style="--text-color-900: var(--color-{{ auth()->user()->text_color ?? 'zinc' }}-900); --text-color-700: var(--color-{{ auth()->user()->text_color ?? 'zinc' }}-700);">
         <a
             href="#content"
             class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:font-medium focus:text-zinc-900 focus:shadow focus:ring-1 focus:ring-zinc-200 dark:focus:bg-zinc-900 dark:focus:text-white dark:focus:ring-zinc-700"
@@ -87,7 +96,8 @@
                     <div class="lg:col-span-7">
                         <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/60 dark:text-zinc-200">
                             <span class="size-1.5 rounded-full bg-pink-500"></span>
-                            A small corner of the internet for big ideas
+                            Current Topic:
+                            Right now, I am exploring Laravel 
                         </p>
 
                         <h1 class="mt-6 text-balance text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
@@ -95,8 +105,7 @@
                         </h1>
 
                         <p class="mt-4 max-w-xl text-pretty text-base leading-relaxed text-zinc-600 dark:text-zinc-300 sm:text-lg">
-                            Fabblogs is my blog space for shipping thoughts, tutorials, and experiments. Fast to read, easy to navigate, and designed for focus.
-                        </p>
+                            Hi I'm Fab. I'm here to unscramble my thoughts, share what I learn, and connect with others through writing.
 
                         <div class="mt-8 flex flex-wrap items-center gap-3">
                             @auth
@@ -113,7 +122,7 @@
                                     class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
                                     wire:navigate
                                 >
-                                    Start writing
+                                    Check it out 
                                 </a>
                                 <a
                                     href="{{ route('login') }}"
@@ -128,25 +137,11 @@
                                 href="#features"
                                 class="inline-flex items-center justify-center rounded-lg px-4 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:text-zinc-200 dark:hover:bg-white/5"
                             >
-                                Explore features
+                                Explore The Site 
                             </a>
                         </div>
-
-                        <dl class="mt-10 grid grid-cols-2 gap-4 sm:max-w-xl sm:grid-cols-3">
-                            <div class="rounded-xl border border-zinc-200 bg-white/70 p-4 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/60">
-                                <dt class="text-xs font-medium text-zinc-600 dark:text-zinc-400">Reading time</dt>
-                                <dd class="mt-1 text-sm font-semibold text-zinc-900 dark:text-white">Optimized layouts</dd>
-                            </div>
-                            <div class="rounded-xl border border-zinc-200 bg-white/70 p-4 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/60">
-                                <dt class="text-xs font-medium text-zinc-600 dark:text-zinc-400">Speed</dt>
-                                <dd class="mt-1 text-sm font-semibold text-zinc-900 dark:text-white">Fast by default</dd>
-                            </div>
-                            <div class="rounded-xl border border-zinc-200 bg-white/70 p-4 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/60">
-                                <dt class="text-xs font-medium text-zinc-600 dark:text-zinc-400">Built with</dt>
-                                <dd class="mt-1 text-sm font-semibold text-zinc-900 dark:text-white">Laravel + Livewire</dd>
-                            </div>
-                        </dl>
-                    </div>
+                    <br>
+                    <br>
 
                     <div class="lg:col-span-5">
                         <div class="relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
@@ -156,12 +151,58 @@
                                     <span class="size-2 rounded-full bg-yellow-400"></span>
                                     <span class="size-2 rounded-full bg-green-400"></span>
                                 </div>
-                                <span class="text-xs font-medium text-zinc-500 dark:text-zinc-400">fabblogs.test</span>
+                                <span class="text-xs font-medium text-zinc-500 dark:text-zinc-400">fabblogs</span>
                             </div>
 
                             <div class="p-4">
                                 <div class="rounded-xl bg-zinc-50 p-4 dark:bg-white/5">
-                                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400">Pinned</p>
+                                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400">What vibe are you going for today?</p>
+                                    <div x-data="{
+                                            apply(color) {
+                                                localStorage.setItem('textColor', color);
+
+                                                const vars = {
+                                                    '--text-color-900': `var(--color-${color}-900)`,
+                                                    '--text-color-700': `var(--color-${color}-700)`,
+                                                    '--text-color-300': `var(--color-${color}-300)`,
+                                                    '--text-color-100': `var(--color-${color}-100)`
+                                                };
+
+                                                Object.entries(vars).forEach(([k,v]) => {
+                                                    document.documentElement.style.setProperty(k, v);
+                                                    document.body.style.setProperty(k, v);
+                                                });
+
+                                                window.dispatchEvent(new CustomEvent('text-color-changed', { detail: { color } }));
+                                                },
+                                            init() {
+                                                const c = localStorage.getItem('textColor') || '{{ auth()->user()->text_color ?? 'zinc' }}';
+                                                this.apply(c);
+                                            }
+                                        }" x-init="init()" class="mt-2 flex gap-2" role="list">
+
+                                        <button @click="apply('pink')" @if(auth()->check()) wire:click="updateTextColor('pink')" @endif aria-label="Set text color to pink" title="Pink" class="h-6 w-6 rounded-full bg-pink-500 ring-2 ring-white dark:ring-zinc-900"></button>
+
+                                        <button @click="apply('fuchsia')" @if(auth()->check()) wire:click="updateTextColor('fuchsia')" @endif aria-label="Set text color to fuchsia" title="Fuchsia" class="h-6 w-6 rounded-full bg-fuchsia-500 ring-2 ring-white dark:ring-zinc-900"></button>
+
+                                        <button @click="apply('purple')" @if(auth()->check()) wire:click="updateTextColor('purple')" @endif aria-label="Set text color to purple" title="Purple" class="h-6 w-6 rounded-full bg-purple-500 ring-2 ring-white dark:ring-zinc-900"></button>
+
+                                        <button @click="apply('indigo')" @if(auth()->check()) wire:click="updateTextColor('indigo')" @endif aria-label="Set text color to indigo" title="Indigo" class="h-6 w-6 rounded-full bg-indigo-500 ring-2 ring-white dark:ring-zinc-900"></button>
+
+                                        <button @click="apply('blue')" @if(auth()->check()) wire:click="updateTextColor('blue')" @endif aria-label="Set text color to blue" title="Blue" class="h-6 w-6 rounded-full bg-blue-500 ring-2 ring-white dark:ring-zinc-900"></button>
+
+                                        <button @click="apply('sky')" @if(auth()->check()) wire:click="updateTextColor('sky')" @endif aria-label="Set text color to sky" title="Sky" class="h-6 w-6 rounded-full bg-sky-500 ring-2 ring-white dark:ring-zinc-900"></button>
+
+                                        <button @click="apply('cyan')" @if(auth()->check()) wire:click="updateTextColor('cyan')" @endif aria-label="Set text color to cyan" title="Cyan" class="h-6 w-6 rounded-full bg-cyan-500 ring-2 ring-white dark:ring-zinc-900"></button>
+
+                                        <button @click="apply('teal')" @if(auth()->check()) wire:click="updateTextColor('teal')" @endif aria-label="Set text color to teal" title="Teal" class="h-6 w-6 rounded-full bg-teal-500 ring-2 ring-white dark:ring-zinc-900"></button>
+
+                                        <button @click="apply('green')" @if(auth()->check()) wire:click="updateTextColor('green')" @endif aria-label="Set text color to green" title="Green" class="h-6 w-6 rounded-full bg-green-500 ring-2 ring-white dark:ring-zinc-900"></button>
+
+                                        <button @click="apply('lime')" @if(auth()->check()) wire:click="updateTextColor('lime')" @endif aria-label="Set text color to lime" title="Lime" class="h-6 w-6 rounded-full bg-lime-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                                    </div>
+
+                                                
                                     <p class="mt-1 text-sm font-semibold text-zinc-900 dark:text-white">How I structure my notes into posts</p>
                                     <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                                         A lightweight workflow: capture → refine → publish. No friction, just momentum.
