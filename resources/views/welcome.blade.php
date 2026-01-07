@@ -12,7 +12,7 @@
             document.documentElement.style.setProperty('--text-color-700', `var(--color-${c}-700)`);
         });
     </script>
-    <body class="min-h-screen bg-white antialiased text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100"
+    <body class="min-h-screen bg-white antialiased text-zinc-900  dark:text-zinc-100"
   style="--text-color-900: var(--color-{{ auth()->user()->text_color ?? 'zinc' }}-900); --text-color-700: var(--color-{{ auth()->user()->text_color ?? 'zinc' }}-700);">
         <a
             href="#content"
@@ -21,7 +21,7 @@
             Skip to content
         </a>
 
-        <header class="sticky top-0 z-40 border-b border-zinc-200/60 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/70">
+        <header class="sticky top-0 z-40 border-b border-zinc-200/60 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950">
             <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
                 <a href="{{ route('home') }}" class="flex items-center gap-3" wire:navigate>
                     <span class="grid size-10 place-items-center">
@@ -54,7 +54,7 @@
                         </a>
                         <a
                             href="{{ route('register') }}"
-                            class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-3 py-2 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
+                            class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-3 py-2 text-sm font-medium shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
                             wire:navigate
                         >
                             Get started
@@ -94,7 +94,7 @@
 
                 <div class="mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-20 lg:grid-cols-12 lg:gap-12 lg:pb-24 lg:pt-20">
                     <div class="lg:col-span-7">
-                        <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/60 dark:text-zinc-200">
+                        <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200">
                             <span class="size-1.5 rounded-full bg-pink-500"></span>
                             Current Topic:
                             Right now, I am exploring Laravel 
@@ -119,7 +119,7 @@
                             @else
                                 <a
                                     href="{{ route('register') }}"
-                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
+                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-950 px-4 py-2.5 text-sm font-medium shadow-lg hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
                                     wire:navigate
                                 >
                                     Check it out 

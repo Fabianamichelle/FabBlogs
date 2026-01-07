@@ -4,7 +4,33 @@
     @include('partials.head', ['title' => 'About Fabiana'])
     <meta name="description" content="Learn more about Fabiana — the engineer behind Fabblogs." />
 </head>
-<body class="min-h-screen bg-white antialiased text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+<script>
+(function(){
+  function applyColor(c){
+    if(!c) return;
+    const vars = {
+      '--text-color-900': `var(--color-${c}-900)`,
+      '--text-color-700': `var(--color-${c}-700)`,
+      '--text-color-300': `var(--color-${c}-300)`,
+      '--text-color-100': `var(--color-${c}-100)`
+    };
+    Object.entries(vars).forEach(([k,v])=>{
+      document.documentElement.style.setProperty(k,v);
+      document.body.style.setProperty(k,v);
+    });
+  }
+
+  window.addEventListener('text-color-changed', e => {
+    applyColor(e.detail?.color || localStorage.getItem('textColor'));
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const c = localStorage.getItem('textColor') || '{{ auth()->user()->text_color ?? "zinc" }}';
+    applyColor(c);
+  });
+})();
+</script>
+<body class="min-h-screen bg-white antialiased text-zinc-900 dark:text-zinc-100">
     <div class="relative isolate overflow-hidden">
         <div class="pointer-events-none absolute inset-0 -z-10">
             <div class="absolute -top-28 left-1/2 h-[26rem] w-[40rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-pink-500/25 via-fuchsia-400/20 to-sky-400/20 blur-3xl"></div>
@@ -18,7 +44,7 @@
                         <x-app-logo-icon class="size-6 fill-current text-white" />
                     </span>
                 </a>
-                <a href="{{ route('home') }}" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-3 py-2 text-xs font-semibold text-white shadow-sm ring-1 ring-black/5 hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
+                <a href="{{ route('home') }}" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-3 py-2 text-xs font-semibold shadow-sm ring-1 ring-black/5 hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
                     ← Back home
                 </a>
             </div>
@@ -65,7 +91,7 @@
                     </div>
                 </div>
                 <div class="lg:col-span-2">
-                    <div class="relative overflow-hidden rounded-3xl border border-zinc-200 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/80">
+                    <div class="relative overflow-hidden rounded-3xl border border-zinc-200 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-zinc-800">
                         <div class="absolute -right-8 -top-8 size-28 rounded-full bg-gradient-to-br from-pink-400/60 via-fuchsia-400/40 to-amber-300/40 blur-3xl"></div>
                         <div class="relative space-y-4">
                             <div class="flex items-center gap-3">
