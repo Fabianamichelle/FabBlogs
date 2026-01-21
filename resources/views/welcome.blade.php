@@ -94,24 +94,24 @@
 
                 <div class="mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-20 lg:grid-cols-12 lg:gap-12 lg:pb-24 lg:pt-20">
                     <div class="lg:col-span-7">
-                        <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200">
+                        <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-300 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200">
                             <span class="size-1.5 rounded-full bg-pink-500"></span>
                             Current Topic:
                             Right now, I am exploring Laravel 
                         </p>
 
                         <h1 class="mt-6 text-balance text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
-                            Write with clarity. Publish with confidence.
+                            A whole new way to document research and ideas
                         </h1>
 
-                        <p class="mt-4 max-w-xl text-pretty text-base leading-relaxed text-zinc-600 dark:text-zinc-300 sm:text-lg">
-                            Hi I'm Fab. I'm here to unscramble my thoughts, share what I learn, and connect with others through writing.
+                        <p class="mt-4 max-w-xl text-pretty text-base leading-relaxed text-zinc-900 dark:text-zinc-400 sm:text-lg">
+                            Hi I'm Fab. I'm here to unscramble my thoughts. I'm not perfect, but I share what I learn... without filter.
 
                         <div class="mt-8 flex flex-wrap items-center gap-3">
                             @auth
                                 <a
                                     href="{{ route('dashboard') }}"
-                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
+                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-white dark:text-zinc-900 dark:hover:bg-pink-500"
                                     wire:navigate
                                 >
                                     Go to dashboard
@@ -119,44 +119,33 @@
                             @else
                                 <a
                                     href="{{ route('register') }}"
-                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-950 px-4 py-2.5 text-sm font-medium shadow-lg hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
+                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium ring-3 text-black shadow-sm hover:bg-pink-500 dark:bg-pink-200 dark:text-zinc-900 dark:hover:bg-pink-500"
                                     wire:navigate
                                 >
-                                    Check it out 
+                                    Join Fabblogs
                                 </a>
+                                <p> or</p>
                                 <a
                                     href="{{ route('login') }}"
-                                    class="inline-flex items-center justify-center rounded-lg px-4 py-2.5 text-sm font-medium text-zinc-700 ring-1 ring-zinc-200 hover:bg-zinc-50 dark:text-zinc-200 dark:ring-zinc-800 dark:hover:bg-white/5"
+                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium ring-3 text-black shadow-sm hover:bg-blue-500 dark:bg-blue-200 dark:text-zinc-900 dark:hover:bg-blue-500"
                                     wire:navigate
                                 >
                                     Log in
                                 </a>
                             @endauth
-
+                            <p>or</p>
                             <a
                                 href="#features"
-                                class="inline-flex items-center justify-center rounded-lg px-4 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:text-zinc-200 dark:hover:bg-white/5"
+                                class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium ring-3 text-black shadow-sm hover:bg-green-500 dark:bg-green-200 dark:text-zinc-900 dark:hover:bg-green-500"
                             >
                                 Explore The Site 
                             </a>
                         </div>
                     <br>
                     <br>
+                    <!-- space for color picker -->
 
-                    <div class="lg:col-span-5">
-                        <div class="relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
-                            <div class="flex items-center justify-between border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
-                                <div class="flex items-center gap-2">
-                                    <span class="size-2 rounded-full bg-red-400"></span>
-                                    <span class="size-2 rounded-full bg-yellow-400"></span>
-                                    <span class="size-2 rounded-full bg-green-400"></span>
-                                </div>
-                                <span class="text-xs font-medium text-zinc-500 dark:text-zinc-400">fabblogs</span>
-                            </div>
-
-                            <div class="p-4">
-                                <div class="rounded-xl bg-zinc-50 p-4 dark:bg-white/5">
-                                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400">What vibe are you going for today?</p>
+                    <p class="text-xs font-medium text-black">What vibe are you going for today? Pick a color!</p>
                                     <div x-data="{
                                             apply(color) {
                                                 localStorage.setItem('textColor', color);
@@ -201,12 +190,28 @@
 
                                         <button @click="apply('lime')" @if(auth()->check()) wire:click="updateTextColor('lime')" @endif aria-label="Set text color to lime" title="Lime" class="h-6 w-6 rounded-full bg-lime-500 ring-2 ring-white dark:ring-zinc-900"></button>
                                     </div>
+                                </div>
 
-                                                
-                                    <p class="mt-1 text-sm font-semibold text-zinc-900 dark:text-white">How I structure my notes into posts</p>
-                                    <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                                        A lightweight workflow: capture → refine → publish. No friction, just momentum.
-                                    </p>
+                        <!-- Side window on home screen -->
+
+                    <div class="lg:col-span-5">
+                        <div class="relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
+                            <div class="flex items-center justify-between border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
+                                <div class="flex items-center gap-2">
+                                    <span class="size-2 rounded-full bg-red-400"></span>
+                                    <span class="size-2 rounded-full bg-yellow-400"></span>
+                                    <span class="size-2 rounded-full bg-green-400"></span>
+                                </div>
+
+                                <span class="text-xs font-medium text-zinc-500 dark:text-zinc-400">fabblogs</span>
+                            </div>
+                            
+
+                            <div class="p-4">
+                                <div class="rounded-xl bg-zinc-50 p-4 dark:bg-white/5">
+                                    <p class="text-sm font-semibold text-zinc-900 dark:text-white">Short, skimmable sections</p>
+                                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400">What vibe are you going for today? Pick a color!</p>
+                                    
                                 </div>
 
                                 <div class="mt-4 grid gap-3">

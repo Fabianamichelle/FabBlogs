@@ -38,7 +38,8 @@
                                 'teal' => 'text-teal-900 dark:text-teal-100 ' . ($textColor === $color ? 'ring-teal-900 dark:ring-teal-100' : 'ring-teal-200 dark:ring-teal-700'),
                                 'cyan' => 'text-cyan-900 dark:text-cyan-100 ' . ($textColor === $color ? 'ring-cyan-900 dark:ring-cyan-100' : 'ring-cyan-200 dark:ring-cyan-700'),
                                 'blue' => 'text-blue-900 dark:text-blue-100 ' . ($textColor === $color ? 'ring-blue-900 dark:ring-blue-100' : 'ring-blue-200 dark:ring-blue-700'),
-                                'indigo' => 'text-indigo-900 dark:text-indigo-100 ' . ($textColor === $color ? 'ring-indigo-900 dark:ring-indigo-100' : 'ring-indigo-200 dark:ring-indigo-700'),
+                                'ind --configure -a
+igo' => 'text-indigo-900 dark:text-indigo-100 ' . ($textColor === $color ? 'ring-indigo-900 dark:ring-indigo-100' : 'ring-indigo-200 dark:ring-indigo-700'),
                                 'violet' => 'text-violet-900 dark:text-violet-100 ' . ($textColor === $color ? 'ring-violet-900 dark:ring-violet-100' : 'ring-violet-200 dark:ring-violet-700'),
                                 'purple' => 'text-purple-900 dark:text-purple-100 ' . ($textColor === $color ? 'ring-purple-900 dark:ring-purple-100' : 'ring-purple-200 dark:ring-purple-700'),
                                 'fuchsia' => 'text-fuchsia-900 dark:text-fuchsia-100 ' . ($textColor === $color ? 'ring-fuchsia-900 dark:ring-fuchsia-100' : 'ring-fuchsia-200 dark:ring-fuchsia-700'),
