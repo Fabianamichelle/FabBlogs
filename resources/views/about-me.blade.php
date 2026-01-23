@@ -72,8 +72,7 @@
                          posts or reaching out to me via email if you have any questions or just want to say hi!
                         <br/><br/>
                          I love AI but my posts are 100% written by me with no AI assistance. On my spare time, I love reading books! I am starting a new challenge for 2026, so 
-                         take a look at my  <a href="https://fabblogs.com/books" class="text-fuchsia-600 hover:underline">book log</a>. I am recently married as of July 2025, and I 
-                         have 3 daughters that keep me on my toes! I own a dog named Prince who is the sassest and sweetest bulldog you will ever meet. I am also in my last year of 
+                         take a look at my  <a href="https://fabblogs.com/books" class="text-black hover:underline italic">book log</a>. I own a dog named Prince who is the sassest and sweetest bulldog you will ever meet. I am also in my last year of 
                          college pursing a double major in Bachelors in Business Administration and Applied Computer Science.
                         <br/><br/>
                         You can expect posts about my learning journey in software engineering, tips and tricks I pick up along the way, and maybe some personal stories too. I will never
@@ -85,7 +84,7 @@
                         
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <a href="mailto:{{ config('mail.from.address') ?? 'hello@example.com' }}" class="inline-flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
+                        <a href="mailto:{{ config('mail.from.address') ?? 'hello@example.com' }}" class="inline-flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
                             💌 Say hello
                         </a>
                     </div>

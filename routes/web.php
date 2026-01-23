@@ -1,12 +1,15 @@
 <?php
 
 use App\Http\Controllers\AboutMeController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\AdminPostController;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\TwoFactor;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -37,3 +40,13 @@ Route::middleware(['auth'])->group(function () {
 
 // Add a route to link to the about me page 
 Route::get('/about', [AboutMeController::class, 'index'])->name('about.me');
+
+
+// Add routes for posts
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
+
+// Add routes for creating posts
+
+Route::get('admin/posts/create', [AdminPostController::class, 'create'])->name('admin.posts.create')->middleware('auth');
+Route::post('admin/posts', [AdminPostController::class, 'store'])->name('admin.posts.store')->middleware('auth');
