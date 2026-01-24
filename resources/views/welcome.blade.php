@@ -210,35 +210,33 @@
                             <div class="p-4">
                                 <div class="rounded-xl bg-zinc-50 p-4 dark:bg-white/5">
                                     <p class="text-sm font-semibold text-zinc-900 dark:text-white"></p>
-                                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400">What vibe are you going for today? Pick a color!</p>
+                                    <p class="text-xl font-bold text-zinc-500 dark:text-zinc-400">Upcoming Topics</p>
                                     
                                 </div>
 
                                 <div class="mt-4 grid gap-3">
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-                                        <p class="text-sm font-semibold text-zinc-900 dark:text-white">Short, skimmable sections</p>
-                                        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Clear headings, generous spacing, and good typography.</p>
+                                        <p class="text-sm font-semibold text-zinc-900 dark:text-white">My Journey with Laravel</p>
+                                        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">How does it work under the hood? Especially for begineers just learning.</p>
                                     </div>
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-                                        <p class="text-sm font-semibold text-zinc-900 dark:text-white">A calm color system</p>
-                                        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Designed to keep attention on the words.</p>
+                                        <p class="text-sm font-semibold text-zinc-900 dark:text-white">Basic Algorithms you should know</p>
+                                        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">We hear this word thrown around in the tech world, but what are they really?</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <p class="mt-4 text-xs text-zinc-500 dark:text-zinc-400">
-                            Tip: this is a starter landing page—swap sections with your own posts, categories, and highlights as you build.
-                        </p>
+                        
                     </div>
                 </div>
             </section>
 
             <section id="features" class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
                 <div class="max-w-2xl">
-                    <h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">Everything you need for a clean blog</h2>
+                    <h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">My Approach To Blogging</h2>
                     <p class="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
-                        A strong foundation for writing and publishing—without the clutter.
+                        Simply curiosity and a desire to share what I learn. No frills, no fluff.
                     </p>
                 </div>
 
@@ -250,9 +248,12 @@
                                 <path d="M8 3h8l2 4.5H6L8 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">Posts that look good</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">Learning Through Association</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                            Typography-first layouts designed for long-form reading across devices.
+                            In order for things to stick in my brain, I connect a previously neutral stimulus and a naturally occuring stimulus and for association. 
+                            This is called <a href="https://www.sciencedirect.com/science/article/abs/pii/S0149763404000892" class="font-bold underline">classical conditioning</a> You have probably
+                            heard of an experiment called Pavlov's dogs. Where a natural stimulus (food) was paired with the sound of a bell, and the dogs 
+                            eventually started to salivate at the sound of the bell alone.
                         </p>
                     </div>
 
@@ -264,9 +265,10 @@
                                 <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="1.8" />
                             </svg>
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">Simple publishing flow</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">Learning By Doing</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                            Keep your workflow lightweight: draft, review, and ship when it’s ready.
+                            A simple but effective way to <a href="https://psycnet.apa.org/fulltext/2014-55719-001.html" class="font-bold underline">learn is by doing.</a> I apply what I learn, and then reinforce my learning 
+                            through talking about it with you. I also like to challenge you to try one simple thing each time you read a post. 
                         </p>
                     </div>
 
@@ -278,50 +280,17 @@
                                 <path d="M9.5 11.5a2.5 2.5 0 0 1 5 0c0 1.1-.72 1.69-1.33 2.16-.61.46-1.17.9-1.17 1.84" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">A space for learning</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">True Critical Thinking</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                            Turn notes into posts, and posts into a searchable archive of ideas.
+                            Humans typically love using short cuts to make quick and efficient decisions, but sometimes these short cuts 
+                            <a href="https://www.onlinecasinoground.nl/wp-content/uploads/2018/12/Decision-Making-and-Cognitive-Biases-EhrlingerReadingerKim2015.pdf" class="font-bold underline">are predictable and stops innovating thinking.</a>
+                            Let alone lead to judgement errors. I try to be more heurristic in my approach while giving myself grace for errors, and you 
+                            get to see that in action here. 
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section id="workflow" class="border-y border-zinc-200 bg-zinc-50/60 py-14 dark:border-zinc-800 dark:bg-white/5 sm:py-20">
-                <div class="mx-auto max-w-6xl px-4 sm:px-6">
-                    <div class="grid gap-10 lg:grid-cols-12 lg:gap-12">
-                        <div class="lg:col-span-5">
-                            <h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">A workflow that stays out of your way</h2>
-                            <p class="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
-                                The goal is simple: keep friction low so writing happens more often.
-                            </p>
-                        </div>
-
-                        <ol class="grid gap-4 lg:col-span-7 sm:grid-cols-3">
-                            <li class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
-                                <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400">Step 1</p>
-                                <p class="mt-2 text-base font-semibold text-zinc-900 dark:text-white">Capture</p>
-                                <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                                    Save ideas quickly—links, snippets, and outlines.
-                                </p>
-                            </li>
-                            <li class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
-                                <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400">Step 2</p>
-                                <p class="mt-2 text-base font-semibold text-zinc-900 dark:text-white">Refine</p>
-                                <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                                    Convert notes into a clear narrative with headings.
-                                </p>
-                            </li>
-                            <li class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
-                                <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400">Step 3</p>
-                                <p class="mt-2 text-base font-semibold text-zinc-900 dark:text-white">Publish</p>
-                                <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                                    Share when it’s ready. Iterate later if you want.
-                                </p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </section>
 
             <section id="newsletter" class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
                 <div class="grid gap-10 rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 sm:p-10 lg:grid-cols-12 lg:items-center">
@@ -345,13 +314,13 @@
                             />
                             <button
                                 type="submit"
-                                class="inline-flex h-11 items-center justify-center rounded-lg bg-zinc-900 px-4 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
+                                class="inline-flex h-11 items-center justify-center rounded-lg bg-zinc-900 px-4 text-sm font-medium text-white shadow-sm hover:bg-zinc-400 dark:bg-black dark:text-zinc-900 dark:hover:bg-zinc-75 ring-3 ring-zinc-900/10 dark:ring-white/10"
                             >
                                 Notify me
                             </button>
                         </form>
                         <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
-                            Newsletter wiring is a placeholder here—hook this up to your provider when you’re ready.
+                            Subscribe to get my latest posts delivered right to your inbox.
                         </p>
                     </div>
                 </div>
