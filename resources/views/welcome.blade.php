@@ -110,11 +110,11 @@
                         <div class="mt-8 flex flex-wrap items-center gap-3">
                             @auth
                                 <a
-                                    href="{{ route('dashboard') }}"
-                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-white dark:text-zinc-900 dark:hover:bg-pink-500"
+                                    href="{{ route('about.me') }}"
+                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500"
                                     wire:navigate
                                 >
-                                    Go to dashboard
+                                    Learn about my work
                                 </a>
                             @else
                                 <a
@@ -135,10 +135,10 @@
                             @endauth
                             <p>or</p>
                             <a
-                                href="#features"
+                                href="{{ route('posts.index') }}"
                                 class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium ring-3 text-black shadow-sm hover:bg-green-500 dark:bg-green-200 dark:text-zinc-900 dark:hover:bg-green-500"
                             >
-                                Explore The Site 
+                                Explore Topics 
                             </a>
                         </div>
                     <br>
@@ -209,7 +209,7 @@
 
                             <div class="p-4">
                                 <div class="rounded-xl bg-zinc-50 p-4 dark:bg-white/5">
-                                    <p class="text-sm font-semibold text-zinc-900 dark:text-white">Short, skimmable sections</p>
+                                    <p class="text-sm font-semibold text-zinc-900 dark:text-white"></p>
                                     <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400">What vibe are you going for today? Pick a color!</p>
                                     
                                 </div>

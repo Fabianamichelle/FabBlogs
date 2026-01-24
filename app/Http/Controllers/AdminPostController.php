@@ -12,7 +12,7 @@ class AdminPostController extends Controller
         return view('admin.posts.create');
     }
 
-    public function store(Rquest $request)
+    public function store(Request $request)
     {
         $data = $request->validate([
             'title' => ['required','string', 'max:255'],

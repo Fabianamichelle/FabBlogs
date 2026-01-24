@@ -11,15 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('posts', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->string('slug')->unique();
-            $table->text('excerpt')->nullable();
-            $table->longText('body');
+        Schema::table('posts', function (Blueprint $table) {
             $table->timestamps();
-            $table->timestamp('published_at')->nullable();
-
         });
     }
 
@@ -28,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('posts');
+        Schema::table('posts', function (Blueprint $table) {
+            $table->dropColumn(['created_at', 'updated_at']);
+        });
     }
 };

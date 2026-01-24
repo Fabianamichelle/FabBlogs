@@ -2,25 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
+use Illuminate\Routing\Controller as BaseController;
 
-class PostController extends Controller
+class Controller extends BaseController
 {
-    // Display a listing of posts
     public function index()
-    {
-        $posts = Post::whereNotNull('published_at')
+        {
+            $posts = \App\Models\Post::whereNotNull('published_at')
                 ->latest('published_at')
                 ->paginate(10);
 
-        return view('posts.index', compact('posts'));
-    }
-
-  
-    public function show(Post $post)
-    {
-        abort_if(is_null($post->published_at), 404);
-
-        return view('posts.show', compact('post'));
-    }
+            return view('posts.index', compact('posts'));
+        }
 }

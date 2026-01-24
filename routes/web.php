@@ -44,9 +44,9 @@ Route::get('/about', [AboutMeController::class, 'index'])->name('about.me');
 
 // Add routes for posts
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
 // Add routes for creating posts
 
-Route::get('admin/posts/create', [AdminPostController::class, 'create'])->name('admin.posts.create')->middleware('auth');
-Route::post('admin/posts', [AdminPostController::class, 'store'])->name('admin.posts.store')->middleware('auth');
+Route::get('admin/posts/create', [AdminPostController::class, 'create'])->name('admin.posts.create');
+Route::post('admin/posts', [AdminPostController::class, 'store'])->name('admin.posts.store');
