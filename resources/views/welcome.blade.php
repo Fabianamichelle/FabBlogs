@@ -30,36 +30,20 @@
                 </a>
 
                 <nav class="hidden items-center gap-6 text-sm text-zinc-700 dark:text-zinc-300 md:flex" aria-label="Primary">
-                    <a href="{{ route('about.me') }}" class="hover:text-zinc-900 dark:hover:text-white">About Me</a>
-                    <a href="#workflow" class="hover:text-zinc-900 dark:hover:text-white">What I'm up to?</a>
-                    <a href="#newsletter" class="hover:text-zinc-900 dark:hover:text-white">Subscribe</a>
+                    <a href="{{ route('about.me') }}" class="hover:text-zinc-900 text-white">About Me</a>
+                    <a href="{{ route('posts.index') }}" class="hover:text-zinc-900 text-white">What I'm up to?</a>
+                    <a href="#newsletter" class="hover:text-zinc-900 text-white">Subscribe</a>
                 </nav>
 
                 <div class="hidden items-center gap-2 md:flex">
-                    @auth
+
                         <a
-                            href="{{ route('dashboard') }}"
-                            class="inline-flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium text-zinc-700 ring-1 ring-zinc-200 hover:bg-zinc-50 dark:text-zinc-200 dark:ring-zinc-800 dark:hover:bg-white/5"
-                            wire:navigate
-                        >
-                            Dashboard
-                        </a>
-                    @else
-                        <a
-                            href="{{ route('login') }}"
-                            class="inline-flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium text-zinc-700 ring-1 ring-zinc-200 hover:bg-zinc-50 dark:text-zinc-200 dark:ring-zinc-800 dark:hover:bg-white/5"
-                            wire:navigate
-                        >
-                            Log in
-                        </a>
-                        <a
-                            href="{{ route('register') }}"
+                            href="{{ route('posts.index') }}"
                             class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-3 py-2 text-sm font-medium shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
                             wire:navigate
                         >
-                            Get started
+                            Explore Topics
                         </a>
-                    @endauth
                 </div>
 
                 <details class="relative md:hidden">
@@ -68,17 +52,8 @@
                     </summary>
                     <div class="absolute right-0 mt-2 w-56 overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-lg dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex flex-col p-2 text-sm">
-                            <a href="#features" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Features</a>
-                            <a href="#workflow" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Workflow</a>
+                            <a href="{{ route('posts.index') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Posts</a>
                             <a href="#newsletter" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Newsletter</a>
-                            <div class="my-1 h-px bg-zinc-200 dark:bg-zinc-800"></div>
-                            @auth
-                                <a href="{{ route('dashboard') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5" wire:navigate>Dashboard</a>
-                            @else
-                                <a href="{{ route('login') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5" wire:navigate>Log in</a>
-                                <a href="{{ route('register') }}" class="rounded-lg bg-zinc-900 px-3 py-2 font-medium text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100" wire:navigate>Get started</a>
-                            @endauth
-                        </div>
                     </div>
                 </details>
             </div>
@@ -101,14 +76,13 @@
                         </p>
 
                         <h1 class="mt-6 text-balance text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
-                            A whole new way to document research and ideas
+                            This is the site where you finally feel at home. 
                         </h1>
 
                         <p class="mt-4 max-w-xl text-pretty text-base leading-relaxed text-zinc-900 dark:text-zinc-400 sm:text-lg">
-                            Hi I'm Fab. I'm here to unscramble my thoughts. I'm not perfect, but I share what I learn... without filter.
+                            Hi I'm Fab. I'm here to unscramble my thoughts. I share what I learn without filter.
 
                         <div class="mt-8 flex flex-wrap items-center gap-3">
-                            @auth
                                 <a
                                     href="{{ route('about.me') }}"
                                     class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500"
@@ -116,30 +90,12 @@
                                 >
                                     Learn about my work
                                 </a>
-                            @else
                                 <a
-                                    href="{{ route('register') }}"
-                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium ring-3 text-black shadow-sm hover:bg-pink-500 dark:bg-pink-200 dark:text-zinc-900 dark:hover:bg-pink-500"
-                                    wire:navigate
+                                    href="{{ route('posts.index') }}"
+                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500"
                                 >
-                                    Join Fabblogs
+                                    Explore Topics 
                                 </a>
-                                <p> or</p>
-                                <a
-                                    href="{{ route('login') }}"
-                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium ring-3 text-black shadow-sm hover:bg-blue-500 dark:bg-blue-200 dark:text-zinc-900 dark:hover:bg-blue-500"
-                                    wire:navigate
-                                >
-                                    Log in
-                                </a>
-                            @endauth
-                            <p>or</p>
-                            <a
-                                href="{{ route('posts.index') }}"
-                                class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium ring-3 text-black shadow-sm hover:bg-green-500 dark:bg-green-200 dark:text-zinc-900 dark:hover:bg-green-500"
-                            >
-                                Explore Topics 
-                            </a>
                         </div>
                     <br>
                     <br>
@@ -210,14 +166,14 @@
                             <div class="p-4">
                                 <div class="rounded-xl bg-zinc-50 p-4 dark:bg-white/5">
                                     <p class="text-sm font-semibold text-zinc-900 dark:text-white"></p>
-                                    <p class="text-xl font-bold text-zinc-500 dark:text-zinc-400">Upcoming Topics</p>
+                                    <p class="text-xl font-bold text-zinc-500 dark:text-zinc-400">Upcoming Posts</p>
                                     
                                 </div>
 
                                 <div class="mt-4 grid gap-3">
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
                                         <p class="text-sm font-semibold text-zinc-900 dark:text-white">My Journey with Laravel</p>
-                                        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">How does it work under the hood? Especially for begineers just learning.</p>
+                                        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Models, Controllers, Views? What are they?</p>
                                     </div>
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
                                         <p class="text-sm font-semibold text-zinc-900 dark:text-white">Basic Algorithms you should know</p>
@@ -235,7 +191,7 @@
             <section id="features" class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
                 <div class="max-w-2xl">
                     <h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">My Approach To Blogging</h2>
-                    <p class="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
+                    <p class="mt-3 text-base leading-relaxed text-zinc-900">
                         Simply curiosity and a desire to share what I learn. No frills, no fluff.
                     </p>
                 </div>
@@ -243,12 +199,9 @@
                 <div class="mt-10 grid gap-4 md:grid-cols-3">
                     <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400">
-                            <svg viewBox="0 0 24 24" fill="none" class="size-5" aria-hidden="true">
-                                <path d="M4 7.5V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                                <path d="M8 3h8l2 4.5H6L8 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-                            </svg>
+                            <img src="{{ asset('storage/cld-server-svgrepo-com.svg') }}" alt="server icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">Learning Through Association</h3>
+                        <h3 class="mt-4 text-base font-semibold text-white">Learning Through Association</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             In order for things to stick in my brain, I connect a previously neutral stimulus and a naturally occuring stimulus and for association. 
                             This is called <a href="https://www.sciencedirect.com/science/article/abs/pii/S0149763404000892" class="font-bold underline">classical conditioning</a> You have probably
@@ -259,13 +212,9 @@
 
                     <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-fuchsia-500/10 text-fuchsia-700 dark:text-fuchsia-400">
-                            <svg viewBox="0 0 24 24" fill="none" class="size-5" aria-hidden="true">
-                                <path d="M8 12h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                                <path d="M12 8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                                <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="1.8" />
-                            </svg>
+                            <img src="{{ asset('storage/com-keyboard-svgrepo-com.svg') }}" alt="keyboard icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">Learning By Doing</h3>
+                        <h3 class="mt-4 text-base font-semibold text-white">Learning By Doing</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             A simple but effective way to <a href="https://psycnet.apa.org/fulltext/2014-55719-001.html" class="font-bold underline">learn is by doing.</a> I apply what I learn, and then reinforce my learning 
                             through talking about it with you. I also like to challenge you to try one simple thing each time you read a post. 
@@ -274,13 +223,9 @@
 
                     <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-700 dark:text-sky-400">
-                            <svg viewBox="0 0 24 24" fill="none" class="size-5" aria-hidden="true">
-                                <path d="M4.5 12a7.5 7.5 0 1 1 15 0v6a1.5 1.5 0 0 1-1.5 1.5h-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                                <path d="M12 15.5v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                                <path d="M9.5 11.5a2.5 2.5 0 0 1 5 0c0 1.1-.72 1.69-1.33 2.16-.61.46-1.17.9-1.17 1.84" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                            <img src="{{ asset('storage/com-laptop-code-svgrepo-com.svg') }}" alt="Laptop Code Icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">True Critical Thinking</h3>
+                        <h3 class="mt-4 text-base font-semibold text-white">True Critical Thinking</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             Humans typically love using short cuts to make quick and efficient decisions, but sometimes these short cuts 
                             <a href="https://www.onlinecasinoground.nl/wp-content/uploads/2018/12/Decision-Making-and-Cognitive-Biases-EhrlingerReadingerKim2015.pdf" class="font-bold underline">are predictable and stops innovating thinking.</a>
@@ -331,13 +276,9 @@
             <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 text-sm text-zinc-600 dark:text-zinc-400 sm:flex-row sm:items-center sm:justify-between sm:px-6">
                 <p>© {{ now()->year }} Fabblogs. Built with Laravel.</p>
                 <div class="flex items-center gap-4">
-                    <a href="#features" class="hover:text-zinc-900 dark:hover:text-white">Features</a>
+                    
+                    <a href="{{ route('posts.index') }}" class="hover:text-zinc-900 dark:hover:text-white">Posts</a>
                     <a href="#newsletter" class="hover:text-zinc-900 dark:hover:text-white">Newsletter</a>
-                    @auth
-                        <a href="{{ route('dashboard') }}" class="hover:text-zinc-900 dark:hover:text-white" wire:navigate>Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}" class="hover:text-zinc-900 dark:hover:text-white" wire:navigate>Log in</a>
-                    @endauth
                 </div>
             </div>
         </footer>

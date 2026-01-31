@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="max-w-3xl mx-auto p-6">
-  <a href="{{ route('posts.index') }}" class="text-blue-600 hover:underline">Back</a>
+<div class="max-w-3xl mx-auto p-6 ">
+  <a href="{{ route('posts.show') }}" class="text-pink-500 hover:underline">Back</a>
 
   <h1 class="text-3xl font-bold mt-4">{{ $post->title }}</h1>
   <p class="text-sm text-gray-500 mt-1">

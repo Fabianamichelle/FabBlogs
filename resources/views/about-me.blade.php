@@ -59,7 +59,7 @@
                        Hi I’m Fabiana!
                     </p>
                     </div>
-                    <h1 class="text-xl font-medium text-zinc-600 dark:text-white">
+                    <h1 class="text-xl font-medium text-zinc-800 dark:text-white">
                         Junior Software Engineer 
                     </h1>
                     <p class="text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
@@ -68,15 +68,19 @@
                     <div>
                        <h3>
                          Welcome to my site! I have been dreaming about having a place to track my learning and I thought why not share it with you!
-                         Hopefully you will find something useful here. I decided to make this site a bit user friendly so you can share your thoughts by commenting on my 
-                         posts or reaching out to me via email if you have any questions or just want to say hi!
+                         Hopefully you will find something useful here. I have a history of being an Business Development Representative, Account Exective, or Account Manager for Remote
+                         SaaS companies. While there, I had the privilege to work with Solutions Engineers and Developers across all skill levels,
+                         and I decided to give it a chance. So, I double majored in Bachelors in Business Administration and Applied Computer Science with an Emphasis of Software Development.
+                         As I happened to fall in love with code, I needed a place where I could track my learning but visiablly so other can see too. So, this is how this site
+                         was born! Now, I get to learn in real time and share it with you! 
                         <br/><br/>
-                         I love AI but my posts are 100% written by me with no AI assistance. On my spare time, I love reading books! I am starting a new challenge for 2026, so 
-                         take a look at my  <a href="https://fabblogs.com/books" class="text-black hover:underline italic">book log</a>. I own a dog named Prince who is the sassest and sweetest bulldog you will ever meet. I am also in my last year of 
-                         college pursing a double major in Bachelors in Business Administration and Applied Computer Science.
+                         I love AI but my posts are 100% written by me with no AI assistance. On my spare time, I love reading books! I own a dog named Prince who is the sassest and sweetest bulldog you will ever meet,
+                         a handsome husband, and little ones I adore! I have lived in 4 different countries and I love to travel and explore new cultures, workout, and ... have I meantioned reading haha!
                         <br/><br/>
                         You can expect posts about my learning journey in software engineering, tips and tricks I pick up along the way, and maybe some personal stories too. I will never
                         make you pay for anything on this site, everything is free and always will be. If you want to support me, consider subscribing to my newsletter where I share exclusive content and updates.
+                        Or you can always reach out to me via email if you have any questions or just want to say hi!
+                        <br/><br/>
                         <br/><br/>
                         Enjoy your stay and happy reading!
                        </h3>
@@ -88,6 +92,15 @@
                             💌 Say hello
                         </a>
                     </div>
+                    <h1 class="text-lg">Oh You can also keep up with other projects and updates here! 👀➡️🔔</h1>
+                     <div class="mt-6">
+                        <h2 class="inline-flex items-center gap-2 rounded-lg text-black bg-white px-4 py-2.5 text-sm font-semibold shadow-sm hover:bg-fuchsia-500">
+                        <a href="https://www.linkedin.com/in/mrsmendoza/" class="hover:underline">Follow Me on Linkedin</a>
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="inline-flex items-center gap-2 rounded-lg text-black bg-white px-4 py-2.5 text-sm font-semibold shadow-sm hover:bg-fuchsia-500">
+                        <a href="https://github.com/Fabianamichelle" class="hover:underline">Follow Me on Github</a>
+                    </div>
                 </div>
                 <div class="lg:col-span-2">
                     <div class="relative overflow-hidden rounded-3xl border border-zinc-200 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-zinc-800">
@@ -95,8 +108,8 @@
                         <div class="relative space-y-4">
                             <div class="flex items-center gap-3">
                                 <div>
-                                    <p class="text-lg uppercase tracking-[0.2em] text-zinc-500 dark:text-white">Why Subscribe?</p>
-                                    <p class="text-m font-semibold text-zinc-900 dark:text-zinc-400">Because I believe in learning through reading and <em class="text-zinc-900 dark:text-white">you should too </em> </p>
+                                    <p class="text-lg uppercase tracking-[0.2em] text-zinc-800 dark:text-white">Why Subscribe?</p>
+                                    <p class="text-m font-semibold text-zinc-900 dark:text-zinc-400">Because I believe in learning through others and <em class="text-zinc-900 dark:text-white">you should too </em> </p>
                                 </div>
                             </div>
                             <div class="h-4 w-full">
@@ -109,7 +122,7 @@
                                 <p>☕ A safe space to grow with a community of people like you</p>
                             </div>
                             <div>
-                                <a href="{{ route('home') }}#newsletter" class="inline-flex items-center gap-2 rounded-lg bg-fuchsia-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-fuchsia-500">
+                                <a href="{{ route('home') }}#newsletter" class="inline-flex items-center gap-2 rounded-lg  text-white bg-pink-400 px-4 py-2.5 text-sm font-semibold shadow-sm hover:bg-violet-300">
                                     📰 Subscribe to updates
                                 </a>
                             </div>
@@ -117,6 +130,14 @@
                     </div>
                 </div>
             </section>
+
+            <section>
+                <div class="border-t border-zinc-200 pt-6 dark:border-zinc-800">
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">
+                        © {{ date('Y') }} Fabiana Lezama. All rights reserved.
+                    </p>
+                </div>
+            </section>  
         </main>
     </div>
 
