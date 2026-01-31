@@ -12,6 +12,8 @@
             document.documentElement.style.setProperty('--text-color-700', `var(--color-${c}-700)`);
         });
     </script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
+
     <body class="min-h-screen bg-white antialiased text-zinc-900  dark:text-zinc-100"
   style="--text-color-900: var(--color-{{ auth()->user()->text_color ?? 'zinc' }}-900); --text-color-700: var(--color-{{ auth()->user()->text_color ?? 'zinc' }}-700);">
         <a
@@ -67,90 +69,96 @@
                     <x-placeholder-pattern class="absolute inset-0 size-full stroke-zinc-900/10 dark:stroke-white/10" />
                 </div>
 
-                <div class="mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-20 lg:grid-cols-12 lg:gap-12 lg:pb-24 lg:pt-20">
-                    <div class="lg:col-span-7">
-                        <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-300 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200">
-                            <span class="size-1.5 rounded-full bg-pink-500"></span>
-                            Current Topic:
-                            Right now, I am exploring Laravel 
-                        </p>
+                <div class="mx-auto grid items-center max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-20 lg:grid-cols-12 lg:gap-12 lg:pb-24 lg:pt-20">
+                  <div class="lg:col-span-7 space-y-6">
+                    <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-300 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200">
+                      <span class="size-1.5 rounded-full bg-pink-500"></span>
+                      Current Topic: Right now, I am exploring Laravel
+                    </p>
 
-                        <h1 class="mt-6 text-balance text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
-                            This is the site where you finally feel at home. 
-                        </h1>
+                    <h1 class="text-balance text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
+                      This is the site where you finally feel at home.
+                    </h1>
 
-                        <p class="mt-4 max-w-xl text-pretty text-base leading-relaxed text-zinc-900 dark:text-zinc-400 sm:text-lg">
-                            Hi I'm Fab. I'm here to unscramble my thoughts. I share what I learn without filter.
+                    <p class="max-w-xl text-pretty text-base leading-relaxed text-zinc-900 dark:text-zinc-400 sm:text-lg">
+                      Hi I'm Fab. I'm here to unscramble my thoughts. I share what I learn without filter.
+                    </p>
 
-                        <div class="mt-8 flex flex-wrap items-center gap-3">
-                                <a
-                                    href="{{ route('about.me') }}"
-                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500"
-                                    wire:navigate
-                                >
-                                    Learn about my work
-                                </a>
-                                <a
-                                    href="{{ route('posts.index') }}"
-                                    class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500"
-                                >
-                                    Explore Topics 
-                                </a>
-                        </div>
-                    <br>
-                    <br>
-                    <!-- space for color picker -->
+                    <div class="mt-2 flex flex-wrap items-center gap-3">
+                      <a
+                        href="{{ route('about.me') }}"
+                        class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500"
+                        wire:navigate
+                      >
+                        Learn about my work
+                      </a>
+                      <a
+                        href="{{ route('posts.index') }}"
+                        class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500"
+                      >
+                        Explore Topics 
+                      </a>
+                    </div>
 
-                    <p class="text-xs font-medium text-black">What vibe are you going for today? Pick a color!</p>
-                                    <div x-data="{
-                                            apply(color) {
-                                                localStorage.setItem('textColor', color);
+                    <div class="space-y-2">
+                      <p class="text-xs font-medium text-black">What vibe are you going for today? Pick a color!</p>
+                      <div x-data="{
+                              apply(color) {
+                                  localStorage.setItem('textColor', color);
 
-                                                const vars = {
-                                                    '--text-color-900': `var(--color-${color}-900)`,
-                                                    '--text-color-700': `var(--color-${color}-700)`,
-                                                    '--text-color-300': `var(--color-${color}-300)`,
-                                                    '--text-color-100': `var(--color-${color}-100)`
-                                                };
+                                  const vars = {
+                                      '--text-color-900': `var(--color-${color}-900)`,
+                                      '--text-color-700': `var(--color-${color}-700)`,
+                                      '--text-color-300': `var(--color-${color}-300)`,
+                                      '--text-color-100': `var(--color-${color}-100)`
+                                  };
 
-                                                Object.entries(vars).forEach(([k,v]) => {
-                                                    document.documentElement.style.setProperty(k, v);
-                                                    document.body.style.setProperty(k, v);
-                                                });
+                                  Object.entries(vars).forEach(([k,v]) => {
+                                      document.documentElement.style.setProperty(k, v);
+                                      document.body.style.setProperty(k, v);
+                                  });
 
-                                                window.dispatchEvent(new CustomEvent('text-color-changed', { detail: { color } }));
-                                                },
-                                            init() {
-                                                const c = localStorage.getItem('textColor') || '{{ auth()->user()->text_color ?? 'zinc' }}';
-                                                this.apply(c);
-                                            }
-                                        }" x-init="init()" class="mt-2 flex gap-2" role="list">
+                                  window.dispatchEvent(new CustomEvent('text-color-changed', { detail: { color } }));
+                                  },
+                              init() {
+                                const c = localStorage.getItem('textColor') || '{{ auth()->user()->text_color ?? 'zinc' }}';
+                                this.apply(c);
+                              }
+                          }" x-init="init()" class="mt-2 flex gap-2" role="list">
 
-                                        <button @click="apply('pink')" @if(auth()->check()) wire:click="updateTextColor('pink')" @endif aria-label="Set text color to pink" title="Pink" class="h-6 w-6 rounded-full bg-pink-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                          <button @click="apply('pink')" @if(auth()->check()) wire:click="updateTextColor('pink')" @endif aria-label="Set text color to pink" title="Pink" class="h-6 w-6 rounded-full bg-pink-500 ring-2 ring-white dark:ring-zinc-900"></button>
 
-                                        <button @click="apply('fuchsia')" @if(auth()->check()) wire:click="updateTextColor('fuchsia')" @endif aria-label="Set text color to fuchsia" title="Fuchsia" class="h-6 w-6 rounded-full bg-fuchsia-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                          <button @click="apply('fuchsia')" @if(auth()->check()) wire:click="updateTextColor('fuchsia')" @endif aria-label="Set text color to fuchsia" title="Fuchsia" class="h-6 w-6 rounded-full bg-fuchsia-500 ring-2 ring-white dark:ring-zinc-900"></button>
 
-                                        <button @click="apply('purple')" @if(auth()->check()) wire:click="updateTextColor('purple')" @endif aria-label="Set text color to purple" title="Purple" class="h-6 w-6 rounded-full bg-purple-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                          <button @click="apply('purple')" @if(auth()->check()) wire:click="updateTextColor('purple')" @endif aria-label="Set text color to purple" title="Purple" class="h-6 w-6 rounded-full bg-purple-500 ring-2 ring-white dark:ring-zinc-900"></button>
 
-                                        <button @click="apply('indigo')" @if(auth()->check()) wire:click="updateTextColor('indigo')" @endif aria-label="Set text color to indigo" title="Indigo" class="h-6 w-6 rounded-full bg-indigo-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                          <button @click="apply('indigo')" @if(auth()->check()) wire:click="updateTextColor('indigo')" @endif aria-label="Set text color to indigo" title="Indigo" class="h-6 w-6 rounded-full bg-indigo-500 ring-2 ring-white dark:ring-zinc-900"></button>
 
-                                        <button @click="apply('blue')" @if(auth()->check()) wire:click="updateTextColor('blue')" @endif aria-label="Set text color to blue" title="Blue" class="h-6 w-6 rounded-full bg-blue-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                          <button @click="apply('blue')" @if(auth()->check()) wire:click="updateTextColor('blue')" @endif aria-label="Set text color to blue" title="Blue" class="h-6 w-6 rounded-full bg-blue-500 ring-2 ring-white dark:ring-zinc-900"></button>
 
-                                        <button @click="apply('sky')" @if(auth()->check()) wire:click="updateTextColor('sky')" @endif aria-label="Set text color to sky" title="Sky" class="h-6 w-6 rounded-full bg-sky-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                          <button @click="apply('sky')" @if(auth()->check()) wire:click="updateTextColor('sky')" @endif aria-label="Set text color to sky" title="Sky" class="h-6 w-6 rounded-full bg-sky-500 ring-2 ring-white dark:ring-zinc-900"></button>
 
-                                        <button @click="apply('cyan')" @if(auth()->check()) wire:click="updateTextColor('cyan')" @endif aria-label="Set text color to cyan" title="Cyan" class="h-6 w-6 rounded-full bg-cyan-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                          <button @click="apply('cyan')" @if(auth()->check()) wire:click="updateTextColor('cyan')" @endif aria-label="Set text color to cyan" title="Cyan" class="h-6 w-6 rounded-full bg-cyan-500 ring-2 ring-white dark:ring-zinc-900"></button>
 
-                                        <button @click="apply('teal')" @if(auth()->check()) wire:click="updateTextColor('teal')" @endif aria-label="Set text color to teal" title="Teal" class="h-6 w-6 rounded-full bg-teal-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                          <button @click="apply('teal')" @if(auth()->check()) wire:click="updateTextColor('teal')" @endif aria-label="Set text color to teal" title="Teal" class="h-6 w-6 rounded-full bg-teal-500 ring-2 ring-white dark:ring-zinc-900"></button>
 
-                                        <button @click="apply('green')" @if(auth()->check()) wire:click="updateTextColor('green')" @endif aria-label="Set text color to green" title="Green" class="h-6 w-6 rounded-full bg-green-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                          <button @click="apply('green')" @if(auth()->check()) wire:click="updateTextColor('green')" @endif aria-label="Set text color to green" title="Green" class="h-6 w-6 rounded-full bg-green-500 ring-2 ring-white dark:ring-zinc-900"></button>
 
-                                        <button @click="apply('lime')" @if(auth()->check()) wire:click="updateTextColor('lime')" @endif aria-label="Set text color to lime" title="Lime" class="h-6 w-6 rounded-full bg-lime-500 ring-2 ring-white dark:ring-zinc-900"></button>
-                                    </div>
-                                </div>
+                          <button @click="apply('lime')" @if(auth()->check()) wire:click="updateTextColor('lime')" @endif aria-label="Set text color to lime" title="Lime" class="h-6 w-6 rounded-full bg-lime-500 ring-2 ring-white dark:ring-zinc-900"></button>
+                      </div>
+                    </div>
+                  </div>
 
-                        <!-- Side window on home screen -->
+                    <!-- Side window on home screen -->
 
-                    <div class="lg:col-span-5">
+                    <div class="lg:col-span-5 md:col-span-12 flex items-center justify-center">
+                        <dotlottie-wc src="https://lottie.host/8a82ee8a-0a5c-4cd9-89e8-d8276b57ffbf/3A9lFgab6v.lottie" style="width: 300px;height: 300px" autoplay loop></dotlottie-wc>
+                    </div>
+
+                    <section>
+                    </section>
+
+                    <div class="lg:col-span-10 lg:col-start-2">
                         <div class="relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
                             <div class="flex items-center justify-between border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
                                 <div class="flex items-center gap-2">
@@ -159,11 +167,12 @@
                                     <span class="size-2 rounded-full bg-green-400"></span>
                                 </div>
 
+
                                 <span class="text-xs font-medium text-zinc-500 dark:text-zinc-400">fabblogs</span>
                             </div>
                             
 
-                            <div class="p-4">
+                            <div class="p-4 text-center">
                                 <div class="rounded-xl bg-zinc-50 p-4 dark:bg-white/5">
                                     <p class="text-sm font-semibold text-zinc-900 dark:text-white"></p>
                                     <p class="text-xl font-bold text-zinc-500 dark:text-zinc-400">Upcoming Posts</p>

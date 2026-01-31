@@ -1,18 +1,18 @@
 <x-layouts.app :title="$post->title">
     <div class="mx-auto max-w-3xl space-y-6 px-4 py-8 sm:px-6">
-        <a href="{{ route('posts.index') }}" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-400">
+        <a href="{{ route('posts.index') }}" class="text-sm font-medium text-pink-900 hover:underline">
             ← Back to posts
         </a>
 
         <header class="space-y-2">
-            <p class="text-sm text-zinc-500 dark:text-zinc-400">
+            <p class="text-sm text-white">
                 {{ optional($post->published_at)?->format('M d, Y') ?? 'Draft' }}
             </p>
-            <h1 class="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white">
+            <h1 class="text-4xl font-semibold tracking-tight text-white">
                 {{ $post->title }}
             </h1>
             @if($post->excerpt)
-                <p class="text-lg text-zinc-600 dark:text-zinc-300">{{ $post->excerpt }}</p>
+                <p class="text-lg text-white">{{ $post->excerpt }}</p>
             @endif
         </header>
 

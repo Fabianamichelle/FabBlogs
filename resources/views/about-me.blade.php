@@ -54,7 +54,9 @@
             <section class="grid gap-8 lg:grid-cols-5 lg:items-center lg:gap-10">
                 <div class="lg:col-span-3 space-y-4">
                     <div class="display:inline-block gap-4 lg:flex lg:items-center">
-                    <x-fab-photo-icon class="rounded-3xl border border-zinc-200 shadow-sm dark:border-zinc-800 display:inline-block" />
+                    <section>
+                        <img src="{{ asset('storage/fabby.jpg') }}" alt="fab at coffee shop" class="h-100 w-100 rounded-xl shadow-lg">
+                    </section>
                     <p class="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
                        Hi I’m Fabiana!
                     </p>
@@ -134,7 +136,7 @@
             <section>
                 <div class="border-t border-zinc-200 pt-6 dark:border-zinc-800">
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">
-                        © {{ date('Y') }} Fabiana Lezama. All rights reserved.
+                        © {{ date('Y') }} Fabiana Mendoza. All rights reserved.
                     </p>
                 </div>
             </section>  
