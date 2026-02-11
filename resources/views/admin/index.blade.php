@@ -1,6 +1,7 @@
 <x-layouts.app :title="$title ?? 'Posts'">
+
 <div class="max-w-3xl mx-auto p-6">
-  <h1 class="text-white-900 text-3xl font-bold mb-6">Posts</h1>
+  <h1 class="text-white text-3xl font-bold mb-6">Posts</h1>
 
   <div class="space-y-4">
     @forelse ($posts as $post)

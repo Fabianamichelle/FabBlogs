@@ -9,14 +9,20 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     // Display a listing of posts
-    public function index()
-    {
-        $posts = Post::whereNotNull('published_at')
-                ->latest('published_at')
-                ->paginate(10);
 
-        return view('posts.index', compact('posts'));
-    }
+public function home(Request $request)
+{
+    $filters = $request->only(['search', 'category', 'pinned']);
+
+    $posts = Post::query()
+        ->published()
+        ->filter($filters)
+        ->latest('published_at')
+        ->paginate(10)
+        ->withQueryString();
+
+    return view('posts.index', compact('posts'));
+}
 
   
     public function show(Post $post)

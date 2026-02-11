@@ -43,7 +43,7 @@ Route::get('/about', [AboutMeController::class, 'index'])->name('about.me');
 
 
 // Add routes for posts
-Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+Route::get('/posts', [PostController::class, 'home'])->name('posts.index');
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
 // Add routes for creating posts

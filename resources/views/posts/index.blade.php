@@ -1,5 +1,5 @@
 <x-layouts.app title="Posts">
-  <main id="content" class="relative isolate overflow-hidden">
+  <main id="content">
     {{-- Background like home --}}
     <div class="pointer-events-none absolute inset-0 -z-10">
       <div class="absolute -top-28 left-1/2 h-[28rem] w-[44rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-pink-500/25 via-fuchsia-500/20 to-sky-500/20 blur-3xl"></div>
@@ -13,58 +13,55 @@
       <div class="flex flex-col gap-6">
         <div class="flex items-start justify-between gap-6">
           <div class="space-y-2">
-            <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-600 shadow-sm backdrop-blur">
-              <span class="size-1.5 rounded-full bg-pink-500"></span>
+            <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-orange-800 shadow-sm backdrop-blur">
+              <span class="size-2 rounded-full bg-pink-500"></span>
               Latest posts
             </p>
 
-            <h1 class="text-balance text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl"
+            <h1 class="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl"
                 style="color: var(--text-color-900);">
               Posts
             </h1>
 
             <p class="max-w-2xl text-pretty text-sm leading-relaxed text-zinc-600 sm:text-base"
                style="color: var(--text-color-700);">
-              Notes from what I’m learning, building, and thinking about lately.
+              Here's what I have been writing about recently. 
             </p>
           </div>
 
           <a href="{{ route('home') }}#newsletter"
-             class="hidden sm:inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800">
+             class="hidden sm:inline-flex items-center justify-center rounded-lg bg-white px-4 py-2.5 text-sm font-medium text-black shadow-md hover:text-white hover:bg-orange-500">
             Subscribe
           </a>
         </div>
 
         {{-- Filter / search bar (looks modern, unique) --}}
         <div class="rounded-2xl border border-zinc-200 bg-white/80 p-4 shadow-sm backdrop-blur">
-          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div class="flex flex-wrap items-center gap-2">
-              <span class="text-xs font-medium text-zinc-500">Browse</span>
-              <span class="inline-flex items-center rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-medium text-zinc-700">
-                All
-              </span>
-              <span class="inline-flex items-center rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-medium text-zinc-700">
-                Laravel
-              </span>
-              <span class="inline-flex items-center rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-medium text-zinc-700">
-                Notes
-              </span>
             </div>
 
             <div class="flex items-center gap-2">
+              <form method="GET" action="{{ route('posts.index') }}" class="flex items-center gap-2">
               <div class="relative w-full sm:w-72">
                 <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400">⌕</span>
                 <input
+                  name="search"
+                  value="{{ request('search') }}"
                   type="text"
                   placeholder="Search posts..."
                   class="h-10 w-full rounded-lg border border-zinc-200 bg-white pl-9 pr-3 text-sm text-zinc-900 shadow-sm outline-none focus:border-zinc-300 focus:ring-2 focus:ring-pink-500/20"
                 />
               </div>
 
-              <a href="{{ route('posts.index') }}"
-                 class="inline-flex h-10 items-center justify-center rounded-lg border border-zinc-200 bg-white px-3 text-sm font-medium text-zinc-700 shadow-sm hover:bg-zinc-50">
+              <button type="submit" class="inline-flex h-10 items-center justify-center rounded-lg bg-white px-3 text-sm font-medium text-zinc-700 border border-zinc-200 shadow-sm hover:bg-zinc-50">
+                Search
+              </button>
+
+              <a href="{{ route('posts.index') }}" class="inline-flex h-10 items-center justify-center rounded-lg border border-zinc-200 bg-white px-3 text-sm font-medium text-zinc-700 shadow-sm hover:bg-zinc-50">
                 Reset
               </a>
+            </form>
             </div>
           </div>
         </div>
