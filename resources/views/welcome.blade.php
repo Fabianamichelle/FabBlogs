@@ -34,7 +34,7 @@
                 <nav class="hidden items-center gap-6 text-sm text-zinc-700 dark:text-zinc-300 md:flex" aria-label="Primary">
                     <a href="{{ route('about.me') }}" class="hover:text-zinc-900 text-white">About Me</a>
                     <a href="{{ route('posts.index') }}" class="hover:text-zinc-900 text-white">What I'm up to?</a>
-                    <a href="#newsletter" class="hover:text-zinc-900 text-white">Subscribe</a>
+                    <a href="{{ route('home') }}#newsletter" class="hover:text-zinc-900 text-white">Subscribe</a>
                 </nav>
 
                 <div class="hidden items-center gap-2 md:flex">
@@ -181,11 +181,11 @@
 
                                 <div class="mt-4 grid gap-3">
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-                                        <p class="text-sm font-semibold text-zinc-900 dark:text-white">My Journey with Laravel</p>
-                                        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Models, Controllers, Views? What are they?</p>
+                                        <p class="text-lg font-semibold text-zinc-900 dark:text-white">My Journey with Laravel</p>
+                                        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Models, Controllers, Views, Routes? How Do They Connect?</p>
                                     </div>
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-                                        <p class="text-sm font-semibold text-zinc-900 dark:text-white">Basic Algorithms you should know</p>
+                                        <p class="text-lg font-semibold text-zinc-900 dark:text-white">Basic Algorithms you should know</p>
                                         <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">We hear this word thrown around in the tech world, but what are they really?</p>
                                     </div>
                                 </div>

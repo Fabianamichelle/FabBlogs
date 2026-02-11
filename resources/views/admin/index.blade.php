@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="max-w-3xl mx-auto p-6">
-  <h1 class="text-3xl font-bold mb-6">Posts</h1>
+  <h1 class="text-white-900 text-3xl font-bold mb-6">Posts</h1>
 
   <div class="space-y-4">
     @forelse ($posts as $post)
@@ -13,12 +13,12 @@
           </a>
         </h2>
 
-        <p class="text-sm text-gray-500 mt-1">
+        <p class="text-sm text-black-500 mt-1">
           {{ optional($post->published_at)->format('M d, Y') }}
         </p>
 
         @if($post->excerpt)
-          <p class="mt-3 text-gray-700">{{ $post->excerpt }}</p>
+          <p class="mt-3 text-black-700">{{ $post->excerpt }}</p>
         @endif
 
         <div class="mt-4">

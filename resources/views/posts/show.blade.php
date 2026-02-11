@@ -16,7 +16,7 @@
             @endif
         </header>
 
-        <div class="prose prose-zinc max-w-none dark:prose-invert">
+        <div class="prose prose-zinc max-w-none">
             {!! nl2br(e($post->body)) !!}
         </div>
     </div>
