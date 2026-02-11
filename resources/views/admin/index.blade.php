@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-layouts.app :title="$title ?? 'Posts'">
 <div class="max-w-3xl mx-auto p-6">
   <h1 class="text-white-900 text-3xl font-bold mb-6">Posts</h1>
 
@@ -36,4 +34,4 @@
     {{ $posts->links() }}
   </div>
 </div>
-@endsection
+</x-layouts.app>

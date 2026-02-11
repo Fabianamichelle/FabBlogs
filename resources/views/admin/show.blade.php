@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-layouts.app :title="$post->title">
 <div class="max-w-3xl mx-auto p-6 ">
   <a href="{{ route('posts.show') }}" class="text-pink-500 hover:underline">Back</a>
 
@@ -13,4 +11,4 @@
     {{ $post->body }}
   </div>
 </div>
-@endsection
+</x-layouts.app>
