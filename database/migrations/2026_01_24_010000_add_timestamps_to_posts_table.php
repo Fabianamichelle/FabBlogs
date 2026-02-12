@@ -11,9 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('posts', function (Blueprint $table) {
-            $table->timestamps();
-        });
+        // `posts` already ships with timestamps; guard to avoid duplicate-column errors
+        if (!Schema::hasColumn('posts', 'created_at') || !Schema::hasColumn('posts', 'updated_at')) {
+            Schema::table('posts', function (Blueprint $table) {
+                if (!Schema::hasColumn('posts', 'created_at')) {
+                    $table->timestamp('created_at')->nullable();
+                }
+                if (!Schema::hasColumn('posts', 'updated_at')) {
+                    $table->timestamp('updated_at')->nullable();
+                }
+            });
+        }
     }
 
     /**
@@ -21,8 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('posts', function (Blueprint $table) {
-            $table->dropColumn(['created_at', 'updated_at']);
-        });
+        // No-op: avoid dropping timestamp columns that may predate this migration
     }
 };

@@ -17,7 +17,7 @@
         </header>
 
         <div class="prose prose-zinc max-w-none">
-            {!! nl2br(e($post->body)) !!}
+            {!! nl2br($post->body) !!}
         </div>
     </div>
 </x-layouts.app>

@@ -47,6 +47,13 @@ Route::get('/posts', [PostController::class, 'home'])->name('posts.index');
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
 // Add routes for creating posts
+Route::middleware('admin.basic')->group(function () {
+    Route::get('admin/posts/create', [AdminPostController::class, 'create'])->name('admin.posts.create');
+    Route::post('admin/posts', [AdminPostController::class, 'store'])->name('admin.posts.store');
 
-Route::get('admin/posts/create', [AdminPostController::class, 'create'])->name('admin.posts.create');
-Route::post('admin/posts', [AdminPostController::class, 'store'])->name('admin.posts.store');
+    //Add images when creating posts
+    Route::post('/admin/uploads/post-image', [AdminPostController::class, 'uploadPostImage'])
+        ->name('admin.uploads.post-image');
+});
+
+

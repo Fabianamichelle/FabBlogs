@@ -25,4 +25,21 @@ class AdminPostController extends Controller
 
         return redirect(route('posts.index'));
     }
+
+
+
+public function uploadPostImage(Request $request)
+{
+    $request->validate([
+        'image' => ['required', 'image', 'max:4096'], // 4MB
+    ]);
+
+    $path = $request->file('image')->store('posts', 'public'); // storage/app/public/posts/...
+
+    return response()->json([
+        'url' => asset('storage/' . $path),
+        'path' => $path,
+    ]);
+}
+
 }
