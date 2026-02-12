@@ -29,10 +29,16 @@
             </p>
           </div>
 
-          <a href="{{ route('home') }}#newsletter"
-             class="hidden sm:inline-flex items-center justify-center rounded-lg bg-white px-4 py-2.5 text-sm font-medium text-black shadow-md hover:text-white hover:bg-black">
-            Subscribe
-          </a>
+          <div class="hidden sm:flex items-center gap-2">
+            <a href="{{ route('home') }}"
+              class="inline-flex items-center rounded-lg bg-white px-4 py-2.5 text-sm font-medium text-black shadow-md hover:bg-black hover:text-white">
+              Back Home
+            </a>
+
+            <a href="{{ route('home') }}#newsletter"
+              class="inline-flex items-center rounded-lg bg-white px-4 py-2.5 text-sm font-medium text-black shadow-md hover:bg-black hover:text-white">
+              Subscribe
+            </a>
         </div>
 
         {{-- Filter / search bar (looks modern, unique) --}}
