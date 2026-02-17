@@ -35,6 +35,7 @@
                     <a href="{{ route('about.me') }}" class="hover:text-zinc-900 text-white">About Me</a>
                     <a href="{{ route('posts.index') }}" class="hover:text-zinc-900 text-white">What I'm up to?</a>
                     <a href="{{ route('home') }}#newsletter" class="hover:text-zinc-900 text-white">Subscribe</a>
+                    <a href="{{ route('projects') }}" class="hover:text-zinc-900 text-white">My Projects</a>
                 </nav>
 
                 <div class="hidden items-center gap-2 md:flex">
@@ -56,6 +57,7 @@
                         <div class="flex flex-col p-2 text-sm">
                             <a href="{{ route('posts.index') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Posts</a>
                             <a href="#newsletter" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Newsletter</a>
+                        
                     </div>
                 </details>
             </div>

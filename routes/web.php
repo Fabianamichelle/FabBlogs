@@ -57,3 +57,9 @@ Route::middleware('admin.basic')->group(function () {
 });
 
 
+// Add routes for projects
+Route::get('/projects', function () {
+    return view('projects');
+})->name('projects');
+
+
