@@ -237,7 +237,7 @@
                         <h3 class="mt-4 text-base font-semibold text-white">True Critical Thinking</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             Humans typically love using short cuts to make quick and efficient decisions, but sometimes these short cuts 
-                            <a href="https://www.onlinecasinoground.nl/wp-content/uploads/2018/12/Decision-Making-and-Cognitive-Biases-EhrlingerReadingerKim2015.pdf" class="font-bold underline">are predictable and stops innovating thinking.</a>
+                            <a href="https://keithstanovich.com/Site/Research_on_Reasoning_files/West_JEP_2008.pdf?utm_source=chatgpt.com" class="font-bold underline">are predictable and stops innovating thinking.</a>
                             Let alone lead to judgement errors. I try to be more heurristic in my approach while giving myself grace for errors, and you 
                             get to see that in action here. 
                         </p>

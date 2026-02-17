@@ -90,9 +90,11 @@
                         
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <a href="mailto:{{ config('mail.from.address') ?? 'hello@example.com' }}" class="inline-flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
+                        <a href="mailto:{{ config('mail.from.address') ?? env('CONTACT_EMAIL', 'hello@example.com') }}"
+                            class="inline-flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
                             💌 Say hello
                         </a>
+
                     </div>
                     <h1 class="text-lg">Oh You can also keep up with other projects and updates here! 👀➡️🔔</h1>
                      <div class="mt-6">

@@ -13,7 +13,7 @@
       <div class="flex flex-col gap-6">
         <div class="flex items-start justify-between gap-6">
           <div class="space-y-2">
-            <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-orange-800 shadow-sm backdrop-blur">
+            <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-pink-600 shadow-sm backdrop-blur">
               <span class="size-2 rounded-full bg-pink-500"></span>
               Latest posts
             </p>
@@ -105,13 +105,14 @@
 
                 <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
                   <p class="text-sm font-semibold text-zinc-700">Measure Outcomes, Not Activity </p>
-                  <p class="mt-1 text-sm text-black">If you want to check him out I recommend <a href="https://calnewport.com/my-new-book-slow-productivity/" class="font bold italic text-blue-600 hover:underline">you go check his theories out here!</a></p>
+                  <p class="mt-1 text-sm text-black">If you want to check him out I recommend <a href="https://calnewport.com/my-new-book-slow-productivity/" class="font bold italic !text-indigo-700 hover:underline">you go check his theories out here!</a></p>
                 </div>
 
                 <a href="{{ route('home') }}#newsletter"
-                   class="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800">
-                  Get updates
+                    class="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-white hover:!text-black hover:shadow-lg hover:ring-2 hover:ring-indigo-500/70">
+                    Get updates
                 </a>
+
               </div>
             </div>
           </div>

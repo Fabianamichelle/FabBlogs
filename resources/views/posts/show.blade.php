@@ -1,6 +1,6 @@
 <x-layouts.app :title="$post->title">
     <div class="mx-auto max-w-3xl space-y-6 px-4 py-8 sm:px-6">
-        <a href="{{ route('posts.index') }}" class="text-sm font-medium text-pink-900 hover:underline">
+        <a href="{{ route('posts.index') }}" class="text-sm font-medium text-pink-900 hover:underline hover:text-white">
             ← Back to posts
         </a>
 
