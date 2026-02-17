@@ -34,7 +34,7 @@
                 <nav class="hidden items-center gap-6 text-sm text-zinc-700 dark:text-zinc-300 md:flex" aria-label="Primary">
                     <a href="{{ route('about.me') }}" class="hover:text-zinc-900 text-white">About Me</a>
                     <a href="{{ route('posts.index') }}" class="hover:text-zinc-900 text-white">What I'm up to?</a>
-                    <a href="{{ route('home') }}#newsletter" class="hover:text-zinc-900 text-white">Subscribe</a>
+                    <a href="https://fabblogs.substack.com/" class="hover:text-zinc-900 text-white">Subscribe</a>
                     <a href="{{ route('projects') }}" class="hover:text-zinc-900 text-white">My Projects</a>
                 </nav>
 
@@ -258,23 +258,10 @@
                     </div>
 
                     <div class="lg:col-span-5">
-                        <form action="#" method="get" class="flex flex-col gap-3 sm:flex-row">
-                            <label class="sr-only" for="email">Email</label>
-                            <input
-                                id="email"
-                                name="email"
-                                type="email"
-                                autocomplete="email"
-                                placeholder="you@example.com"
-                                class="h-11 w-full rounded-lg border border-zinc-200 bg-white px-3 text-sm text-zinc-900 shadow-sm outline-none ring-0 placeholder:text-zinc-400 focus:border-zinc-300 focus:ring-2 focus:ring-pink-500/30 dark:border-zinc-800 dark:bg-zinc-950 dark:text-white dark:placeholder:text-zinc-500 dark:focus:border-zinc-700"
-                            />
-                            <button
-                                type="submit"
-                                class="inline-flex h-11 items-center justify-center rounded-lg bg-zinc-900 px-4 text-sm font-medium text-white shadow-sm hover:bg-zinc-400 dark:bg-black dark:text-zinc-900 dark:hover:bg-zinc-75 ring-3 ring-zinc-900/10 dark:ring-white/10"
-                            >
-                                Notify me
-                            </button>
-                        </form>
+                        <a href="https://fabblogs.substack.com/" class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 dark:bg-pink dark:text-black dark:hover:bg-pink-500">
+                            Join the newsletter
+                        </a>
+            
                         <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
                             Subscribe to get my latest posts delivered right to your inbox.
                         </p>

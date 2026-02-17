@@ -14,9 +14,6 @@
         <a href="https://www.linkedin.com/in/mrsmendoza/" class="inline-flex items-center rounded-lg border border-zinc-200 bg-white px-4 py-2.5 text-sm font-semibold text-zinc-800 hover:bg-zinc-50">
           LinkedIn
         </a>
-        <a href="#" class="inline-flex items-center rounded-lg border border-zinc-200 bg-white px-4 py-2.5 text-sm font-semibold text-zinc-800 hover:bg-zinc-50">
-          Resume
-        </a>
       </div>
     </div>
 
@@ -58,7 +55,7 @@
           <span class="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-700">Tailwind</span>
           <span class="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-700">Jetstream</span>
         </div>
-        <div class="mt-6 text-sm font-semibold text-zinc-800 group-hover:text-zinc-900">VTry it out yourself →</div>
+        <div class="mt-6 text-sm font-semibold text-zinc-800 group-hover:text-zinc-900">Try it out yourself →</div>
       </a>
     </div>
 
@@ -67,10 +64,11 @@
       <h3 class="text-xl font-semibold text-zinc-900">More projects</h3>
       <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         @foreach ([
-          ['title'=>'Habit Tracker', 'desc'=>'Simple habits + streaks.', 'tags'=>['Laravel','Livewire', 'Tailwind', 'Alpine.js', 'img'=>('Habit_Tracker.png')]],
+          ['title'=>'Habit Tracker', 'desc'=>'Simple habits + streaks.', 'tags'=>['Laravel','Livewire', 'Tailwind', 'Alpine.js'], 'img'=>'Habit_Tracker.png'],
           ['title'=>'Tutor-Tama', 'desc'=>'A Kawaii themed study buddy that will summarize your documents :)', 'tags'=>['HTML','Javascript']],
           ['title'=>'CLI Weather App ', 'desc'=>'A lightweight CLI tool that displays the current weather for any city, directly in your terminal.', 'tags'=>['PhP']],
         ] as $p)
+
           <div class="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm hover:shadow-md transition">
             <div class="text-lg font-semibold text-zinc-900">{{ $p['title'] }}</div>
             <div class="mt-2 text-sm text-zinc-600">{{ $p['desc'] }}</div>
