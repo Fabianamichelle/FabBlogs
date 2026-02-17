@@ -210,7 +210,7 @@
                 <div class="mt-10 grid gap-4 md:grid-cols-3">
                     <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400">
-                            <img src="{{ asset('storage/cld-server-svgrepo-com.svg') }}" alt="server icon">
+                            <img src="{{ asset('images/cld-server-svgrepo-com.svg') }}" alt="server icon">
                         </div>
                         <h3 class="mt-4 text-base font-semibold text-white">Learning Through Association</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
@@ -223,7 +223,7 @@
 
                     <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-fuchsia-500/10 text-fuchsia-700 dark:text-fuchsia-400">
-                            <img src="{{ asset('storage/com-keyboard-svgrepo-com.svg') }}" alt="keyboard icon">
+                            <img src="{{ asset('images/com-keyboard-svgrepo-com.svg') }}" alt="keyboard icon">
                         </div>
                         <h3 class="mt-4 text-base font-semibold text-white">Learning By Doing</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
@@ -234,7 +234,7 @@
 
                     <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-700 dark:text-sky-400">
-                            <img src="{{ asset('storage/com-laptop-code-svgrepo-com.svg') }}" alt="Laptop Code Icon">
+                            <img src="{{ asset('images/com-laptop-code-svgrepo-com.svg') }}" alt="Laptop Code Icon">
                         </div>
                         <h3 class="mt-4 text-base font-semibold text-white">True Critical Thinking</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">

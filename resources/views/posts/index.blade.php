@@ -91,7 +91,7 @@
               <p class="text-xs font-medium text-zinc-700">Book of The Month</p>
               <p class="mt-1 text-lg font-semibold text-black" style="color: var(--text-color-900);">
                 Slow Productivity 
-              <img src="{{ asset('storage/calnewport.jpg') }}" alt="Cal Newport" class="mt-4 rounded-lg border border-zinc-200">
+              <img src="{{ asset('images/calnewport.jpg') }}" alt="Cal Newport" class="mt-4 rounded-lg border border-zinc-200">
 
               </p>
               <p class="mt-2 text-sm text-black">By Cal Newport</p>
@@ -185,5 +185,4 @@
     </section>
   </main>
 </x-layouts.app>
-
 

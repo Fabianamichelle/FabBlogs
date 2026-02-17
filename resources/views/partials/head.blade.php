@@ -3,8 +3,8 @@
 
 <title>{{ $title ?? config('app.name') }}</title>
 
-<link rel="icon" type="image/jpeg" sizes="32x32" href="{{ asset('storage/fabsblogslogo.jpeg') }}">
-<link rel="apple-touch-icon" href="{{ asset('storage/fabsblogslogo.jpeg') }}">
+<link rel="icon" type="image/jpeg" sizes="32x32" href="{{ asset('images/fabsblogslogo.jpeg') }}">
+<link rel="apple-touch-icon" href="{{ asset('images/fabsblogslogo.jpeg') }}">
 
 
 

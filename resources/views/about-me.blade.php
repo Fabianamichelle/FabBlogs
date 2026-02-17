@@ -55,7 +55,7 @@
                 <div class="lg:col-span-3 space-y-4">
                     <div class="display:inline-block gap-4 lg:flex lg:items-center">
                     <section>
-                        <img src="{{ asset('storage/fabby.jpg') }}" alt="fab at coffee shop" class="h-100 w-100 rounded-xl shadow-lg">
+                        <img src="{{ asset('images/fabby.jpg') }}" alt="fab at coffee shop" class="h-100 w-100 rounded-xl shadow-lg">
                     </section>
                     <p class="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
                        Hi I’m Fabiana!

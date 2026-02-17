@@ -1,1 +1,1 @@
-<img src="/storage/fabsblogslogo.jpeg" alt="Fab Logo" />
+<img src="{{ asset('images/fabsblogslogo.jpeg') }}" alt="Fab Logo" />
