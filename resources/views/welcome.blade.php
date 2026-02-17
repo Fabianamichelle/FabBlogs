@@ -88,7 +88,7 @@
 
                     <div class="mt-2 flex flex-wrap items-center gap-3">
                       <a
-                        href="{{ route('about.me') }}"
+                        href="{{ route('projects') }}"
                         class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500"
                         wire:navigate
                       >
@@ -203,7 +203,7 @@
                 <div class="max-w-2xl">
                     <h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">My Approach To Blogging</h2>
                     <p class="mt-3 text-base leading-relaxed text-zinc-900">
-                        Simply curiosity and a desire to share what I learn. No frills, no fluff.
+                        How does Fabiana approach problems?
                     </p>
                 </div>
 
@@ -276,7 +276,7 @@
                 <div class="flex items-center gap-4">
                     
                     <a href="{{ route('posts.index') }}" class="hover:text-zinc-900 dark:hover:text-white">Posts</a>
-                    <a href="#newsletter" class="hover:text-zinc-900 dark:hover:text-white">Newsletter</a>
+                    <a href="https://fabblogs.substack.com/" class="hover:text-zinc-900 dark:hover:text-white">Newsletter</a>
                 </div>
             </div>
         </footer>

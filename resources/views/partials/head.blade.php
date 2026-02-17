@@ -3,7 +3,11 @@
 
 <title>{{ $title ?? config('app.name') }}</title>
 
-<link rel="icon" type="Image/x-icon" href="/storage/fab.jpeg" sizes="32x32 16x16 180x180" />
+<link rel="icon" type="image/jpeg" sizes="32x32" href="{{ asset('storage/fabsblogslogo.jpeg') }}">
+<link rel="apple-touch-icon" href="{{ asset('storage/fabsblogslogo.jpeg') }}">
+
+
+
 
 
 

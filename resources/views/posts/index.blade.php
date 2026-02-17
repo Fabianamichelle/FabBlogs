@@ -35,7 +35,7 @@
               Back Home
             </a>
 
-            <a href="{{ route('home') }}#newsletter"
+            <a href="https://fabblogs.substack.com/"
               class="inline-flex items-center rounded-lg bg-white px-4 py-2.5 text-sm font-medium text-black shadow-md hover:bg-black hover:text-white">
               Subscribe
             </a>
@@ -108,7 +108,7 @@
                   <p class="mt-1 text-sm text-black">If you want to check him out I recommend <a href="https://calnewport.com/my-new-book-slow-productivity/" class="font bold italic !text-indigo-700 hover:underline">you go check his theories out here!</a></p>
                 </div>
 
-                <a href="{{ route('home') }}#newsletter"
+                <a href="https://fabblogs.substack.com/"
                     class="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-white hover:!text-black hover:shadow-lg hover:ring-2 hover:ring-indigo-500/70">
                     Get updates
                 </a>
