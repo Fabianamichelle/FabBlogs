@@ -76,7 +76,7 @@
                 <div class="mx-auto grid items-center max-w-6xl gap-12 px-4 pb-16 pt-14 text-center sm:px-6 sm:pb-20 lg:grid-cols-12 lg:gap-12 lg:pb-24 lg:pt-20 lg:text-left">
                   <div class="lg:col-span-7 space-y-6">
                     <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-600 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200 mx-auto lg:mx-0">
-                      <span class="size-1.5 rounded-full !g-pink-500"></span>
+                      <span class="size-1.5 rounded-full bg-pink-500"></span>
                       Current Topic: Right now, I am exploring Laravel
                     </p>
 
