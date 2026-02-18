@@ -42,7 +42,7 @@
           <div>
             <h2 class="text-2xl font-semibold text-zinc-900">Chirper</h2>
             <p class="mt-2 text-zinc-900">
-              follows the "Laravel Learn: Chirper" tutorial to build a simple microblogging platform similar to Twitter.
+              Follows the "Laravel Learn: Chirper" tutorial to build a simple microblogging platform similar to Twitter.
             </p>
           </div>
           <span class="rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-700">
@@ -61,7 +61,7 @@
 
     {{-- More projects --}}
     <div class="mt-10">
-      <h3 class="text-xl font-semibold text-white">More projects On My GitHub</h3>
+      <h3 class="text-xl font-semibold text-white">More Projects On My GitHub</h3>
       <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         @foreach ([
           ['title'=>'Habit Tracker', 'desc'=>'Simple habits + streaks.', 'tags'=>['Laravel','Livewire', 'Tailwind', 'Alpine.js'], 'img'=>'Habit_Tracker.png'],
