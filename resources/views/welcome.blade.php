@@ -55,8 +55,10 @@
                     </summary>
                     <div class="absolute right-0 mt-2 w-56 overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-lg dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex flex-col p-2 text-sm">
+                            <a href="{{ route('about.me') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">About Me</a>
                             <a href="{{ route('posts.index') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Posts</a>
-                            <a href="#newsletter" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Newsletter</a>
+                            <a href="{{ route('projects') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Projects</a>
+                            <a href="https://fabblogs.substack.com/" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Subscribe</a>
                         </div>
                     </div>
                 </details>
@@ -102,7 +104,7 @@
                       </a>
                     </div>
 
-                    <div class="space-y-2">
+                    <div class="space-y-2 hidden md:block">
                       <p class="text-xs font-medium text-black">What vibe are you going for today? Pick a color!</p>
                       <div x-data="{
                               apply(color) {
