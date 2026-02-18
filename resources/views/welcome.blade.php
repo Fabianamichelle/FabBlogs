@@ -57,7 +57,7 @@
                         <div class="flex flex-col p-2 text-sm">
                             <a href="{{ route('posts.index') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Posts</a>
                             <a href="#newsletter" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Newsletter</a>
-                        
+                        </div>
                     </div>
                 </details>
             </div>
@@ -71,9 +71,9 @@
                     <x-placeholder-pattern class="absolute inset-0 size-full stroke-zinc-900/10 dark:stroke-white/10" />
                 </div>
 
-                <div class="mx-auto grid items-center max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-20 lg:grid-cols-12 lg:gap-12 lg:pb-24 lg:pt-20">
+                <div class="mx-auto grid items-center max-w-6xl gap-12 px-4 pb-16 pt-14 text-center sm:px-6 sm:pb-20 lg:grid-cols-12 lg:gap-12 lg:pb-24 lg:pt-20 lg:text-left">
                   <div class="lg:col-span-7 space-y-6">
-                    <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-300 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200">
+                    <p class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-300 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200 mx-auto lg:mx-0">
                       <span class="size-1.5 rounded-full bg-pink-500"></span>
                       Current Topic: Right now, I am exploring Laravel
                     </p>
@@ -82,21 +82,21 @@
                       This is the site where you finally feel at home.
                     </h1>
 
-                    <p class="max-w-xl text-pretty text-base leading-relaxed text-zinc-900 dark:text-zinc-400 sm:text-lg">
+                    <p class="max-w-xl text-pretty text-base leading-relaxed text-zinc-900 dark:text-zinc-400 sm:text-lg mx-auto lg:mx-0">
                       Hi I'm Fab. I'm here to unscramble my thoughts. I share what I learn without filter.
                     </p>
 
-                    <div class="mt-2 flex flex-wrap items-center gap-3">
+                    <div class="mt-2 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
                       <a
                         href="{{ route('projects') }}"
-                        class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500"
+                        class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500 w-full sm:w-auto"
                         wire:navigate
                       >
                         Learn about my work
                       </a>
                       <a
                         href="{{ route('posts.index') }}"
-                        class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500"
+                        class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500 w-full sm:w-auto"
                       >
                         Explore Topics 
                       </a>
@@ -122,11 +122,11 @@
 
                                   window.dispatchEvent(new CustomEvent('text-color-changed', { detail: { color } }));
                                   },
-                              init() {
-                                const c = localStorage.getItem('textColor') || '{{ auth()->user()->text_color ?? 'zinc' }}';
-                                this.apply(c);
-                              }
-                          }" x-init="init()" class="mt-2 flex gap-2" role="list">
+                          init() {
+                            const c = localStorage.getItem('textColor') || '{{ auth()->user()->text_color ?? 'zinc' }}';
+                            this.apply(c);
+                          }
+                      }" x-init="init()" class="mt-2 flex flex-wrap justify-center gap-2 lg:justify-start" role="list">
 
                           <button @click="apply('pink')" @if(auth()->check()) wire:click="updateTextColor('pink')" @endif aria-label="Set text color to pink" title="Pink" class="h-6 w-6 rounded-full bg-pink-500 ring-2 ring-white dark:ring-zinc-900"></button>
 
@@ -208,11 +208,11 @@
                 </div>
 
                 <div class="mt-10 grid gap-4 md:grid-cols-3">
-                    <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
+                    <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400">
                             <img src="{{ asset('images/cld-server-svgrepo-com.svg') }}" alt="server icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-white">Learning Through Association</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">Learning Through Association</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             In order for things to stick in my brain, I connect a previously neutral stimulus and a naturally occuring stimulus and for association. 
                             This is called <a href="https://www.sciencedirect.com/science/article/abs/pii/S0149763404000892" class="font-bold underline">classical conditioning</a> You have probably
@@ -221,22 +221,22 @@
                         </p>
                     </div>
 
-                    <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
+                    <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-fuchsia-500/10 text-fuchsia-700 dark:text-fuchsia-400">
                             <img src="{{ asset('images/com-keyboard-svgrepo-com.svg') }}" alt="keyboard icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-white">Learning By Doing</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">Learning By Doing</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             A simple but effective way to <a href="https://psycnet.apa.org/fulltext/2014-55719-001.html" class="font-bold underline">learn is by doing.</a> I apply what I learn, and then reinforce my learning 
                             through talking about it with you. I also like to challenge you to try one simple thing each time you read a post. 
                         </p>
                     </div>
 
-                    <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
+                    <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-700 dark:text-sky-400">
                             <img src="{{ asset('images/com-laptop-code-svgrepo-com.svg') }}" alt="Laptop Code Icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-white">True Critical Thinking</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">True Critical Thinking</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             Humans typically love using short cuts to make quick and efficient decisions, but sometimes these short cuts 
                             <a href="https://keithstanovich.com/Site/Research_on_Reasoning_files/West_JEP_2008.pdf?utm_source=chatgpt.com" class="font-bold underline">are predictable and stops innovating thinking.</a>
@@ -249,20 +249,20 @@
 
 
             <section id="newsletter" class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
-                <div class="grid gap-10 rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 sm:p-10 lg:grid-cols-12 lg:items-center">
-                    <div class="lg:col-span-7">
+                <div class="grid gap-10 rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm text-center sm:p-10 lg:grid-cols-12 lg:items-center lg:text-left dark:border-zinc-800 dark:bg-zinc-950">
+                    <div class="lg:col-span-7 space-y-3">
                         <h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">Get new posts in your inbox</h2>
-                        <p class="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
+                        <p class="text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
                             A short email when something new is published. No spam. Unsubscribe anytime.
                         </p>
                     </div>
 
-                    <div class="lg:col-span-5">
-                        <a href="https://fabblogs.substack.com/" class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 dark:bg-pink dark:text-black dark:hover:bg-pink-500">
+                    <div class="lg:col-span-5 space-y-3">
+                        <a href="https://fabblogs.substack.com/" class="inline-flex w-full items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 sm:w-auto dark:bg-pink dark:text-black dark:hover:bg-pink-500">
                             Join the newsletter
                         </a>
             
-                        <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
+                        <p class="text-xs text-zinc-500 dark:text-zinc-400">
                             Subscribe to get my latest posts delivered right to your inbox.
                         </p>
                     </div>
