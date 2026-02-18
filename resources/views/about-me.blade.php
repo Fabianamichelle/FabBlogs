@@ -44,7 +44,7 @@
                         <x-app-logo-icon class="size-6 fill-current text-white" />
                     </span>
                 </a>
-                <a href="{{ route('home') }}" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 !text-white px-3 py-2 text-xs font-semibold shadow-sm ring-1 ring-black/5 hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
+                <a href="{{ route('home') }}" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 !text-white px-3 py-2 text-xs font-semibold shadow-sm ring-1 ring-black/5 hover:bg-zinc-800 dark:bg-white dark:!text-zinc-900 dark:hover:bg-zinc-200">
                     ← Back home
                 </a>
             </div>
@@ -55,7 +55,7 @@
                 <div class="lg:col-span-3 space-y-4">
                     <div class="display:inline-block gap-4 lg:flex lg:items-center">
                     <section>
-                        <img src="{{ asset('images/fabby.jpg') }}" alt="fab at coffee shop" class="h-120 w-80 rounded-xl shadow-lg">
+                        <img src="{{ asset('images/fabby.jpg') }}" alt="fab at coffee shop" class="h-120 w-90 rounded-xl shadow-lg">
                     </section>
                     <p class="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
                        Hi I’m Fabiana!
@@ -91,7 +91,7 @@
                     </div>
                     <div class="flex flex-wrap gap-3">
                         <a href="mailto:{{ config('mail.from.address') ?? env('CONTACT_EMAIL', 'fabianamichellee@example.com') }}"
-                            class="inline-flex items-center gap-2 rounded-lg bg-zinc-500 px-4 py-2.5 text-sm font-semibold !text-white shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
+                            class="inline-flex items-center gap-2 rounded-lg bg-zinc-500 px-4 py-2.5 text-sm font-semibold !text-white shadow-sm hover:bg-zinc-800 dark:bg-white dark:!text-zinc-900 dark:hover:bg-zinc-200">
                             💌 Say hello
                         </a>
 
