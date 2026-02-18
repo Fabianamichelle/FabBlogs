@@ -50,7 +50,7 @@
                 </div>
 
                 <details class="relative md:hidden">
-                    <summary class="list-none rounded-lg px-3 py-2 text-sm font-medium text-zinc-900 ring-1 ring-zinc-200 hover:bg-zinc-50 !dark:text-white dark:ring-zinc-800 dark:hover:bg-white/5">
+                    <summary class="list-none rounded-lg px-3 py-2 text-sm font-medium text-zinc-900 ring-1 ring-zinc-200 hover:bg-zinc-50 dark:text-zinc-200 dark:ring-zinc-800 dark:hover:bg-white/5">
                         Menu
                     </summary>
                     <div class="absolute right-0 mt-2 w-56 overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-lg dark:border-zinc-800 dark:bg-zinc-950 dark:text-white">
@@ -185,11 +185,11 @@
 
                                 <div class="mt-4 grid gap-3">
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-                                        <p class="text-lg font-semibold text-zinc-900 dark:text-white">My Journey with Laravel</p>
+                                        <p class="text-lg font-semibold text-zinc-900 dark:text-zinc-50">My Journey with Laravel</p>
                                         <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Models, Controllers, Views, Routes? How Do They Connect?</p>
                                     </div>
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-                                        <p class="text-lg font-semibold text-zinc-900 dark:text-white">Basic Algorithms you should know</p>
+                                        <p class="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Basic Algorithms you should know</p>
                                         <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">We hear this word thrown around in the tech world, but what are they really?</p>
                                     </div>
                                 </div>
@@ -214,7 +214,7 @@
                         <div class="flex size-10 items-center justify-center rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400">
                             <img src="{{ asset('images/cld-server-svgrepo-com.svg') }}" alt="server icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">Learning Through Association</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-zinc-50">Learning Through Association</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             In order for things to stick in my brain, I connect a previously neutral stimulus and a naturally occuring stimulus and for association. 
                             This is called <a href="https://www.sciencedirect.com/science/article/abs/pii/S0149763404000892" class="font-bold underline">classical conditioning</a> You have probably
@@ -227,7 +227,7 @@
                         <div class="flex size-10 items-center justify-center rounded-xl bg-fuchsia-500/10 text-fuchsia-700 dark:text-fuchsia-400">
                             <img src="{{ asset('images/com-keyboard-svgrepo-com.svg') }}" alt="keyboard icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">Learning By Doing</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-zinc-50">Learning By Doing</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             A simple but effective way to <a href="https://psycnet.apa.org/fulltext/2014-55719-001.html" class="font-bold underline">learn is by doing.</a> I apply what I learn, and then reinforce my learning 
                             through talking about it with you. I also like to challenge you to try one simple thing each time you read a post. 
@@ -238,7 +238,7 @@
                         <div class="flex size-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-700 dark:text-sky-400">
                             <img src="{{ asset('images/com-laptop-code-svgrepo-com.svg') }}" alt="Laptop Code Icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-white">True Critical Thinking</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:text-zinc-50">True Critical Thinking</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             Humans typically love using short cuts to make quick and efficient decisions, but sometimes these short cuts 
                             <a href="https://keithstanovich.com/Site/Research_on_Reasoning_files/West_JEP_2008.pdf?utm_source=chatgpt.com" class="font-bold underline">are predictable and stops innovating thinking.</a>
@@ -253,7 +253,7 @@
             <section id="newsletter" class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
                 <div class="grid gap-10 rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm text-center sm:p-10 lg:grid-cols-12 lg:items-center lg:text-left dark:border-zinc-800 dark:bg-zinc-950">
                     <div class="lg:col-span-7 space-y-3">
-                        <h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">Get new posts in your inbox</h2>
+                        <h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-3xl">Get new posts in your inbox</h2>
                         <p class="text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
                             A short email when something new is published. No spam. Unsubscribe anytime.
                         </p>
