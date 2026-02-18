@@ -50,7 +50,7 @@
                 </div>
 
                 <details class="relative md:hidden">
-                    <summary class="list-none rounded-lg px-3 py-2 text-sm font-medium text-zinc-700 ring-1 ring-zinc-200 hover:bg-zinc-50 dark:text-zinc-200 dark:ring-zinc-800 dark:hover:bg-white/5">
+                    <summary class="list-none rounded-lg px-3 py-2 text-sm font-medium text-zinc-900 ring-1 ring-zinc-200 hover:bg-zinc-50 dark:text-zinc-200 dark:ring-zinc-800 dark:hover:bg-white/5">
                         Menu
                     </summary>
                     <div class="absolute right-0 mt-2 w-56 overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-lg dark:border-zinc-800 dark:bg-zinc-950 dark:text-white">
