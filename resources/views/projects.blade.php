@@ -61,7 +61,7 @@
 
     {{-- More projects --}}
     <div class="mt-10">
-      <h3 class="text-xl font-semibold text-zinc-900">More projects</h3>
+      <h3 class="text-xl font-semibold text-zinc-900">More projects On My GitHub</h3>
       <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         @foreach ([
           ['title'=>'Habit Tracker', 'desc'=>'Simple habits + streaks.', 'tags'=>['Laravel','Livewire', 'Tailwind', 'Alpine.js'], 'img'=>'Habit_Tracker.png'],

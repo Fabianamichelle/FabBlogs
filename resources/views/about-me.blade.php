@@ -73,11 +73,11 @@
                          Hopefully you will find something useful here. I have a history of being an Business Development Representative, Account Exective, or Account Manager for Remote
                          SaaS companies. While there, I had the privilege to work with Solutions Engineers and Developers across all skill levels,
                          and I decided to give it a chance. So, I double majored in Bachelors in Business Administration and Applied Computer Science with an Emphasis of Software Development.
-                         As I happened to fall in love with code, I needed a place where I could track my learning but visiablly so other can see too. So, this is how this site
+                         As I happened to fall in love with code, I needed a place where I could track my learning but visiablly so others can see too. So, this is how this site
                          was born! Now, I get to learn in real time and share it with you! 
                         <br/><br/>
                          I love AI but my posts are 100% written by me with no AI assistance. On my spare time, I love reading books! I own a dog named Prince who is the sassest and sweetest bulldog you will ever meet,
-                         a handsome husband, and little ones I adore! I have lived in 4 different countries and I love to travel and explore new cultures, workout, and ... have I meantioned reading haha!
+                         a handsome partner, and little ones I adore! I have lived in 4 different countries and I love to travel and explore new cultures, workout, and ... have I mentioned reading haha!
                         <br/><br/>
                         You can expect posts about my learning journey in software engineering, tips and tricks I pick up along the way, and maybe some personal stories too. I will never
                         make you pay for anything on this site, everything is free and always will be. If you want to support me, consider subscribing to my newsletter where I share exclusive content and updates.
@@ -90,8 +90,8 @@
                         
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <a href="mailto:{{ config('mail.from.address') ?? env('CONTACT_EMAIL', 'hello@example.com') }}"
-                            class="inline-flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">
+                        <a href="mailto:{{ config('mail.from.address') ?? env('CONTACT_EMAIL', 'fabianamichellee@example.com') }}"
+                            class="inline-flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-white dark:hover:bg-zinc-200">
                             💌 Say hello
                         </a>
 
