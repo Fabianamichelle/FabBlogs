@@ -3,7 +3,7 @@
     <div class="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
       <p class="text-sm font-semibold text-pink-600">Projects</p>
       <h1 class="mt-2 text-4xl font-bold text-zinc-900">Stuff I’m building</h1>
-      <p class="mt-3 max-w-2xl text-zinc-600">
+      <p class="mt-3 max-w-2xl text-zinc-900">
         A mix of school, software, and fun experiments. Click a project to see details.
       </p>
 
@@ -41,7 +41,7 @@
         <div class="flex items-start justify-between gap-4">
           <div>
             <h2 class="text-2xl font-semibold text-zinc-900">Chirper</h2>
-            <p class="mt-2 text-zinc-600">
+            <p class="mt-2 text-zinc-900">
               follows the "Laravel Learn: Chirper" tutorial to build a simple microblogging platform similar to Twitter.
             </p>
           </div>
@@ -61,7 +61,7 @@
 
     {{-- More projects --}}
     <div class="mt-10">
-      <h3 class="text-xl font-semibold text-zinc-900">More projects On My GitHub</h3>
+      <h3 class="text-xl font-semibold text-white">More projects On My GitHub</h3>
       <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         @foreach ([
           ['title'=>'Habit Tracker', 'desc'=>'Simple habits + streaks.', 'tags'=>['Laravel','Livewire', 'Tailwind', 'Alpine.js'], 'img'=>'Habit_Tracker.png'],
@@ -71,7 +71,7 @@
 
           <div class="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm hover:shadow-md transition">
             <div class="text-lg font-semibold text-zinc-900">{{ $p['title'] }}</div>
-            <div class="mt-2 text-sm text-zinc-600">{{ $p['desc'] }}</div>
+            <div class="mt-2 text-sm text-zinc-800">{{ $p['desc'] }}</div>
             <div class="mt-4 flex flex-wrap gap-2">
               @foreach($p['tags'] as $t)
                 <span class="rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-medium text-zinc-700">{{ $t }}</span>
@@ -96,7 +96,7 @@
     <div class="mt-10 rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
       <div>
         <h3 class="text-xl font-semibold text-zinc-900">Want to collaborate?</h3>
-        <p class="mt-1 text-sm text-zinc-600">Open to internships and small freelance projects.</p>
+        <p class="mt-1 text-sm text-zinc-800">Open to internships and small freelance projects.</p>
       </div>
       <div class="flex gap-3">
         <a href="mailto:fabianamichellee@gmail.com" class="inline-flex items-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-zinc-800">
