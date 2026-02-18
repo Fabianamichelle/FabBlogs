@@ -172,24 +172,24 @@
                                 </div>
 
 
-                                <span class="text-xs font-medium text-zinc-500 dark:text-zinc-400">fabblogs</span>
+                                <span class="text-xs font-medium !text-pink-500 dark:!text-pink-400">fabblogs</span>
                             </div>
                             
 
                             <div class="p-4 text-center">
                                 <div class="rounded-xl bg-zinc-50 p-4 dark:bg-white/5">
                                     <p class="text-sm font-semibold text-zinc-900 dark:text-white"></p>
-                                    <p class="text-xl font-bold text-zinc-500 dark:text-white">Upcoming Posts</p>
+                                    <p class="text-xl font-bold !text-orange-600 dark:!text-orange-600">Upcoming Posts</p>
                                     
                                 </div>
 
                                 <div class="mt-4 grid gap-3">
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-                                        <p class="text-lg font-semibold text-zinc-900 dark:text-zinc-50">My Journey with Laravel</p>
+                                        <p class="text-lg font-semibold text-zinc-900 dark:!text-white">My Journey with Laravel</p>
                                         <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Models, Controllers, Views, Routes? How Do They Connect?</p>
                                     </div>
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-                                        <p class="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Basic Algorithms you should know</p>
+                                        <p class="text-lg font-semibold text-zinc-900 dark:!text-white">Basic Algorithms you should know</p>
                                         <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">We hear this word thrown around in the tech world, but what are they really?</p>
                                     </div>
                                 </div>
