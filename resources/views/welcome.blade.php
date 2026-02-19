@@ -162,7 +162,7 @@
                     <section>
                     </section>
 
-                    <div class="lg:col-span-10 lg:col-start-2 border border-orange-200">
+                    <div class="lg:col-span-10 lg:col-start-2 rounded-2xl border border-orange-200">
                         <div class="relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
                             <div class="flex items-center justify-between border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
                                 <div class="flex items-center gap-2">
