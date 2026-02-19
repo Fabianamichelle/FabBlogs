@@ -185,11 +185,11 @@
 
                                 <div class="mt-4 grid gap-3">
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-                                        <p class="text-lg font-semibold text-zinc-900 dark:!text-white">My Journey with Laravel</p>
+                                        <p class="text-lg font-semibold text-zinc-900 dark:!text-white text-left">My Journey with Laravel</p>
                                         <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Models, Controllers, Views, Routes? How Do They Connect?</p>
                                     </div>
                                     <div class="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-                                        <p class="text-lg font-semibold text-zinc-900 dark:!text-white">Basic Algorithms you should know</p>
+                                        <p class="text-lg font-semibold text-zinc-900 dark:!text-white text-left">Basic Algorithms you should know</p>
                                         <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">We hear this word thrown around in the tech world, but what are they really?</p>
                                     </div>
                                 </div>
