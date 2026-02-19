@@ -162,7 +162,7 @@
                     <section>
                     </section>
 
-                    <div class="lg:col-span-10 lg:col-start-2">
+                    <div class="lg:col-span-10 lg:col-start-2 border border-orange-200">
                         <div class="relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
                             <div class="flex items-center justify-between border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
                                 <div class="flex items-center gap-2">
@@ -176,7 +176,7 @@
                             </div>
                             
 
-                            <div class="p-4 text-center border border-orange-200">
+                            <div class="p-4 text-center">
                                 <div class="rounded-xl bg-zinc-100 p-4 dark:bg-zinc-800">
                                     <p class="text-sm font-semibold text-zinc-900 dark:text-white"></p>
                                     <p class="text-xl font-bold !text-zinc-900 dark:!text-white">Upcoming Posts</p>
