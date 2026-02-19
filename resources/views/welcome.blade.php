@@ -214,7 +214,7 @@
                         <div class="flex size-10 items-center justify-center rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400">
                             <img src="{{ asset('images/cld-server-svgrepo-com.svg') }}" alt="server icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:!text-white">Learning Through Association</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:!text-white text-left">Learning Through Association</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             In order for things to stick in my brain, I connect a previously neutral stimulus and a naturally occuring stimulus and for association. 
                             This is called <a href="https://www.sciencedirect.com/science/article/abs/pii/S0149763404000892" class="font-bold underline">classical conditioning</a> You have probably
@@ -227,7 +227,7 @@
                         <div class="flex size-10 items-center justify-center rounded-xl bg-fuchsia-500/10 text-fuchsia-700 dark:text-fuchsia-400">
                             <img src="{{ asset('images/com-keyboard-svgrepo-com.svg') }}" alt="keyboard icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:!text-white">Learning By Doing</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:!text-white text-left">Learning By Doing</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             A simple but effective way to <a href="https://psycnet.apa.org/fulltext/2014-55719-001.html" class="font-bold underline">learn is by doing.</a> I apply what I learn, and then reinforce my learning 
                             through talking about it with you. I also like to challenge you to try one simple thing each time you read a post. 
@@ -238,7 +238,7 @@
                         <div class="flex size-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-700 dark:text-sky-400">
                             <img src="{{ asset('images/com-laptop-code-svgrepo-com.svg') }}" alt="Laptop Code Icon">
                         </div>
-                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:!text-white">True Critical Thinking</h3>
+                        <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:!text-white text-left">True Critical Thinking</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                             Humans typically love using short cuts to make quick and efficient decisions, but sometimes these short cuts 
                             <a href="https://keithstanovich.com/Site/Research_on_Reasoning_files/West_JEP_2008.pdf?utm_source=chatgpt.com" class="font-bold underline">are predictable and stops innovating thinking.</a>
