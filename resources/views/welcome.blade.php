@@ -177,7 +177,7 @@
                             
 
                             <div class="p-4 text-center">
-                                <div class="rounded-xl bg-teal-400 p-4 dark:bg-teal-400/50">
+                                <div class="rounded-xl bg-teal-400 p-4 dark:bg-teal-400">
                                     <p class="text-sm font-semibold text-zinc-900 dark:text-white"></p>
                                     <p class="text-xl font-bold !text-orange-600 dark:!text-orange-300">Upcoming Posts</p>
                                     
