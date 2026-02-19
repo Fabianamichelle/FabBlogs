@@ -36,6 +36,7 @@
                     <a href="{{ route('posts.index') }}" class="hover:text-zinc-900 text-white">What I'm up to?</a>
                     <a href="https://fabblogs.substack.com/" class="hover:text-zinc-900 text-white">Subscribe</a>
                     <a href="{{ route('projects') }}" class="hover:text-zinc-900 text-white">My Projects</a>
+                    <a href="https://www.youtube.com/@FabBuilds" class="hover:text-zinc-900 text-white">YouTube</a>
                 </nav>
 
                 <div class="hidden items-center gap-2 md:flex">
@@ -59,6 +60,7 @@
                             <a href="{{ route('posts.index') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Posts</a>
                             <a href="{{ route('projects') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Projects</a>
                             <a href="https://fabblogs.substack.com/" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Subscribe</a>
+                            <a href="https://www.youtube.com/@FabBuilds" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">YouTube</a>
                         </div>
                     </div>
                 </details>
