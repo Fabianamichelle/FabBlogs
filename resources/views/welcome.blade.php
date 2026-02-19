@@ -259,7 +259,7 @@
                         </p>
                     </div>
 
-                    <div class="lg:col-span-5 space-y-3">
+                    <div class="lg:col-span-5 space-y-3 !dark:bg-pink-500 p-4 rounded-lg">
                         <a href="https://fabblogs.substack.com/" class="inline-flex w-full items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 sm:w-auto dark:bg-pink dark:text-black dark:hover:bg-pink-500">
                             Join the newsletter
                         </a>
