@@ -127,7 +127,7 @@
                             </div>
                             <div>
                                 <a href="https://fabblogs.substack.com/" class="inline-flex items-center gap-2 rounded-lg  text-white bg-pink-400 px-4 py-2.5 text-sm font-semibold shadow-sm hover:bg-violet-300">
-                                    📰 Subscribe to updates
+                                    📰 Subscribe for updates
                                 </a>
                             </div>
                         </div>

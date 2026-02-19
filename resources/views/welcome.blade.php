@@ -179,7 +179,7 @@
                             <div class="p-4 text-center">
                                 <div class="rounded-xl bg-teal-400 p-4 dark:bg-white/5">
                                     <p class="text-sm font-semibold text-zinc-900 dark:text-white"></p>
-                                    <p class="text-xl font-bold !text-orange-600 dark:!text-orange-400">Upcoming Posts</p>
+                                    <p class="text-xl font-bold !text-orange-600 dark:!text-orange-300">Upcoming Posts</p>
                                     
                                 </div>
 
@@ -203,14 +203,14 @@
 
             <section id="features" class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
                 <div class="max-w-2xl">
-                    <h2 class="text-2xl font-semibold tracking-tight text-teal-400 dark:text-white sm:text-3xl">My Approach To Blogging</h2>
+                    <h2 class="text-2xl font-semibold tracking-tight text-teal-400 dark:!text-teal-400 sm:text-3xl">My Approach To Blogging</h2>
                     <p class="mt-3 text-base leading-relaxed text-zinc-900">
                         How does Fabiana approach problems?
                     </p>
                 </div>
 
                 <div class="mt-10 grid gap-4 md:grid-cols-3">
-                    <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950">
+                    <div class="rounded-2xl border border-orange-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400">
                             <img src="{{ asset('images/cld-server-svgrepo-com.svg') }}" alt="server icon">
                         </div>
@@ -223,7 +223,7 @@
                         </p>
                     </div>
 
-                    <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950 dark:text-white">
+                    <div class="rounded-2xl border border-orange-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950 dark:text-white">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-fuchsia-500/10 text-fuchsia-700 dark:text-fuchsia-400">
                             <img src="{{ asset('images/com-keyboard-svgrepo-com.svg') }}" alt="keyboard icon">
                         </div>
@@ -234,7 +234,7 @@
                         </p>
                     </div>
 
-                    <div class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950 dark:text-white">
+                    <div class="rounded-2xl border border-orange-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950 dark:text-white">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-700 dark:text-sky-400">
                             <img src="{{ asset('images/com-laptop-code-svgrepo-com.svg') }}" alt="Laptop Code Icon">
                         </div>
