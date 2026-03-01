@@ -94,16 +94,15 @@
                       <a
                         href="{{ route('projects') }}"
                         class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500 w-full sm:w-auto"
-                        wire:navigate
-                      >
+                        wire:navigate>
                         Learn about my work
                       </a>
-                      <a
-                        href="{{ route('posts.index') }}"
-                        class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500 w-full sm:w-auto"
-                      >
-                        Explore Topics 
+                        <a
+                        href="https://fabblogs.substack.com/"
+                        class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500 w-full sm:w-auto">
+                        Subscribe to Newsletter 
                       </a>
+
                     </div>
 
                     <div class="space-y-2 hidden md:block">
