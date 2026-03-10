@@ -64,6 +64,7 @@
       <h3 class="text-xl font-semibold text-white">More Projects On My GitHub</h3>
       <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         @foreach ([
+          ['title'=>'Loom Clone', 'desc'=>'My Personal Screen Recorder App', 'tags'=>['Next.js','Mux','TailwindCSS'],'img'=>'Portfolio.png'],
           ['title'=>'Habit Tracker', 'desc'=>'Simple habits + streaks.', 'tags'=>['Laravel','Livewire', 'Tailwind', 'Alpine.js'], 'img'=>'Habit_Tracker.png'],
           ['title'=>'Tutor-Tama', 'desc'=>'A Kawaii themed study buddy that will summarize your documents :)', 'tags'=>['HTML','Javascript']],
           ['title'=>'CLI Weather App ', 'desc'=>'A lightweight CLI tool that displays the current weather for any city, directly in your terminal.', 'tags'=>['PhP']],
@@ -86,7 +87,7 @@
     <div class="mt-10 rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm">
       <h3 class="text-xl font-semibold text-zinc-900">Stack</h3>
       <div class="mt-4 flex flex-wrap gap-2">
-        @foreach (['Laravel','PHP','Blade','Tailwind','SQLite','MySQL','Python','Git','Laravel','HTML','CSS', 'Javascript', 'R'] as $s)
+        @foreach (['Laravel','PHP','Next.js','react','Tailwind','SQLite','MySQL','Python','Git','Laravel','HTML','CSS', 'Javascript', 'R'] as $s)
           <span class="rounded-full bg-zinc-100 px-3 py-1 text-sm font-medium text-zinc-800">{{ $s }}</span>
         @endforeach
       </div>
@@ -96,7 +97,7 @@
     <div class="mt-10 rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
       <div>
         <h3 class="text-xl font-semibold text-zinc-900">Want to collaborate?</h3>
-        <p class="mt-1 text-sm text-zinc-800">Open to internships and small freelance projects.</p>
+        <p class="mt-1 text-sm text-zinc-800">Open to collaborations and small freelance projects.</p>
       </div>
       <div class="flex gap-3">
         <a href="mailto:fabianamichellee@gmail.com" class="inline-flex items-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-zinc-800">
