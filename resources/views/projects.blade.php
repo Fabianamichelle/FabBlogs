@@ -57,6 +57,28 @@
         </div>
         <div class="mt-6 text-sm font-semibold text-zinc-800 group-hover:text-zinc-900">Try it out yourself →</div>
       </a>
+
+      <a href="https://alcovebookshelf.laravel.cloud/login" class="group rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm transition hover:shadow-md">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-semibold text-zinc-900">Alcove</h2>
+            <p class="mt-2 text-zinc-900">
+              Your Virtual Cozy Book Nook: To log your books, and keep track of your reading journey. Built with Laravel.
+            </p>
+          </div>
+          <span class="rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-700">
+           Featured 
+          </span>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-700">Laravel</span>
+          <span class="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-700">Eloquent</span>
+          <span class="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-700">Tailwind</span>
+          <span class="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-700">Jetstream</span>
+        </div>
+        <div class="mt-6 text-sm font-semibold text-zinc-800 group-hover:text-zinc-900">Try it out yourself →</div>
+      </a>
     </div>
 
     {{-- More projects --}}
