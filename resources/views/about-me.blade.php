@@ -393,7 +393,7 @@
                         ['May 2026',  'Junior Engineer Intern',    'Laravel',      'Working with a Team, pushing myself deeper into the Laravel ecosystem. Exploring: Livewire, Pest testing, and system design.', 'right'],
                         ['2026', 'Applied CS + Business Admin Graduate',    'Software Development',  'Completed a double major: BBA + Applied Computer Science with an Emphasis in Software Development.', 'left'],
                         ['2025', 'Freelance Developer',  'Projects & Freelance',  'Building full-stack web apps with Laravel, Livewire, and Tailwind. Deployed on Laravel Cloud. Open to junior roles and collaborations.', 'right'],
-                        ['2022', 'Account Executive',      'Remote SaaS',           'Worked closely with Solutions Engineers and developers daily. Realized I wanted to be on the other side — writing the code, not just selling it.', 'left'],
+                        ['2022', 'Account Executive',      'Remote SaaS',           'Worked closely with Solutions Engineers and developers daily. Realized I wanted to be on the other side. Writing the code, not just selling it.', 'left'],
                         ['2020', 'Business Development',  'Remote SaaS',           'Started in tech sales as a BDR, progressing to AE and Account Manager. Built strong communication and business sense that I now bring to engineering.', 'right'],
                     ] as [$year, $role, $type, $desc, $side])
                     <div class="md:grid md:grid-cols-2 md:gap-16 items-center reveal {{ $side === 'left' ? 'left' : 'right' }}">
