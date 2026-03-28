@@ -270,7 +270,7 @@
                                 </defs>
                                 <circle cx="55" cy="55" r="42" fill="rgba(236,72,153,0.1)" stroke="rgba(236,72,153,0.3)" stroke-width="1"/>
                                 <text font-size="9.5" fill="rgba(236,72,153,0.9)" font-weight="700" letter-spacing="3.2">
-                                    <textPath href="#circ">OPEN TO WORK • HIRE ME • FABIANA •</textPath>
+                                    <textPath href="#circ">OPEN TO WORK • HIRE ME • FAB •</textPath>
                                 </text>
                                 <circle cx="55" cy="55" r="5" fill="#ec4899"/>
                             </svg>
