@@ -171,15 +171,36 @@
             <a href="{{ route('home') }}" class="text-sm font-bold tracking-widest uppercase" style="color:rgba(255,255,255,.7);">Fab</a>
             <span class="text-xs tracking-wider hidden sm:block" style="color:rgba(255,255,255,.2);">fabianamichellee@gmail.com</span>
             <nav class="flex items-center gap-6 sm:gap-8">
-                <a href="{{ route('about.me') }}" class="nav-link active">About</a>
+                {{-- Desktop links --}}
+                <a href="{{ route('about.me') }}" class="nav-link active hidden sm:inline">About</a>
                 <a href="https://fabblogs.substack.com/" target="_blank" class="nav-link hidden sm:inline">Blog</a>
                 <a href="{{ route('projects') }}" class="nav-link hidden sm:inline">Work</a>
                 <a href="{{ route('skills') }}" class="nav-link hidden sm:inline">Skills</a>
                 <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" target="_blank"
-                   class="rounded-full px-4 py-1.5 text-xs font-semibold tracking-wider uppercase transition"
+                   class="rounded-full px-4 py-1.5 text-xs font-semibold tracking-wider uppercase transition hidden sm:inline-block"
                    style="border:1px solid rgba(236,72,153,.5);color:#ec4899;background:rgba(236,72,153,.07);"
                    onmouseenter="this.style.background='rgba(236,72,153,.18)'"
                    onmouseleave="this.style.background='rgba(236,72,153,.07)'">Hire me ↗</a>
+
+                {{-- Mobile menu --}}
+                <details class="relative sm:hidden">
+                    <summary class="list-none cursor-pointer rounded-lg px-3 py-2 text-sm font-semibold tracking-wider uppercase"
+                             style="color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);">
+                        Menu
+                    </summary>
+                    <div class="absolute right-0 mt-2 w-52 overflow-hidden rounded-xl"
+                         style="border:1px solid rgba(255,255,255,.1);background:rgba(10,10,12,.97);backdrop-filter:blur(14px);box-shadow:0 8px 32px rgba(0,0,0,.5);">
+                        <div class="flex flex-col p-2 text-sm">
+                            <a href="{{ route('about.me') }}" class="rounded-lg px-3 py-2 font-medium" style="color:#ec4899;">About</a>
+                            <a href="https://fabblogs.substack.com/" target="_blank" class="rounded-lg px-3 py-2" style="color:rgba(255,255,255,.7);" onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,.7)'">Blog</a>
+                            <a href="{{ route('projects') }}" class="rounded-lg px-3 py-2" style="color:rgba(255,255,255,.7);" onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,.7)'">Work</a>
+                            <a href="{{ route('skills') }}" class="rounded-lg px-3 py-2" style="color:rgba(255,255,255,.7);" onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,.7)'">Skills</a>
+                            <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" target="_blank"
+                               class="rounded-lg px-3 py-2 mt-1 text-center font-semibold tracking-wider uppercase"
+                               style="color:#ec4899;border:1px solid rgba(236,72,153,.4);background:rgba(236,72,153,.07);">Hire me ↗</a>
+                        </div>
+                    </div>
+                </details>
             </nav>
         </div>
     </header>

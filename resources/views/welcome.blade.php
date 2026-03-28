@@ -55,11 +55,8 @@
                     <div class="absolute right-0 mt-2 w-56 overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-lg dark:border-zinc-800 dark:bg-zinc-950 dark:text-white">
                         <div class="flex flex-col p-2 text-sm">
                             <a href="{{ route('about.me') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">About Me</a>
-                            <a href="{{ route('posts.index') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Posts</a>
-                            <a href="{{ route('projects') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Projects</a>
-                            <a href="https://fabblogs.substack.com/" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Subscribe</a>
+                            <a href="https://fabblogs.substack.com/" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">SubStack</a>
                             <a href="https://www.youtube.com/@FabBuilds" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">YouTube</a>
-                            <a href="{{ route('skills') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Work With Me</a>
                         </div>
                     </div>
                 </details>
