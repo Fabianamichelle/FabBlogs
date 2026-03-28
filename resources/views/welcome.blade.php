@@ -33,11 +33,8 @@
 
                 <nav class="hidden items-center gap-6 text-sm text-zinc-700 dark:text-zinc-300 md:flex" aria-label="Primary">
                     <a href="{{ route('about.me') }}" class="hover:text-zinc-900 text-white">About Me</a>
-                    <a href="{{ route('posts.index') }}" class="hover:text-zinc-900 text-white">What I'm up to?</a>
-                    <a href="https://fabblogs.substack.com/" class="hover:text-zinc-900 text-white">Subscribe</a>
-                    <a href="{{ route('projects') }}" class="hover:text-zinc-900 text-white">My Projects</a>
+                    <a href="https://fabblogs.substack.com/" class="hover:text-zinc-900 text-white">SubStack</a>
                     <a href="https://www.youtube.com/@FabBuilds" class="hover:text-zinc-900 text-white">YouTube</a>
-                    <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" class="hover:text-zinc-900 text-white">Work With Me</a>
                 </nav>
 
                 <div class="hidden items-center gap-2 md:flex">
@@ -62,7 +59,7 @@
                             <a href="{{ route('projects') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Projects</a>
                             <a href="https://fabblogs.substack.com/" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Subscribe</a>
                             <a href="https://www.youtube.com/@FabBuilds" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">YouTube</a>
-                            <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Work With Me</a>
+                            <a href="{{ route('skills') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">Work With Me</a>
                         </div>
                     </div>
                 </details>

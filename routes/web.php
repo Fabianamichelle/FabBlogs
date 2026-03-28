@@ -62,4 +62,9 @@ Route::get('/projects', function () {
     return view('projects');
 })->name('projects');
 
+// Skills page
+Route::get('/skills', function () {
+    return view('skills');
+})->name('skills');
+
 
