@@ -191,7 +191,7 @@
             <nav class="flex items-center gap-6 sm:gap-8">
                 {{-- Desktop links --}}
                 <a href="{{ route('about.me') }}" class="nav-link active hidden sm:inline">About</a>
-                <a href="https://fabblogs.substack.com/" target="_blank" class="nav-link hidden sm:inline">Blog</a>
+                <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" class="nav-link hidden sm:inline">Blog</a>
                 <a href="{{ route('projects') }}" class="nav-link hidden sm:inline">Work</a>
                 <a href="{{ route('skills') }}" class="nav-link hidden sm:inline">Skills</a>
                 <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" target="_blank"
@@ -210,7 +210,7 @@
                          style="border:1px solid rgba(255,255,255,.1);background:rgba(10,10,12,.97);backdrop-filter:blur(14px);box-shadow:0 8px 32px rgba(0,0,0,.5);">
                         <div class="flex flex-col p-2 text-sm">
                             <a href="{{ route('about.me') }}" class="rounded-lg px-3 py-2 font-medium" style="color:#ec4899;">About</a>
-                            <a href="https://fabblogs.substack.com/" target="_blank" class="rounded-lg px-3 py-2" style="color:rgba(255,255,255,.7);" onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,.7)'">Blog</a>
+                            <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" class="rounded-lg px-3 py-2" style="color:rgba(255,255,255,.7);" onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,.7)'">Blog</a>
                             <a href="{{ route('projects') }}" class="rounded-lg px-3 py-2" style="color:rgba(255,255,255,.7);" onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,.7)'">Work</a>
                             <a href="{{ route('skills') }}" class="rounded-lg px-3 py-2" style="color:rgba(255,255,255,.7);" onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,.7)'">Skills</a>
                             <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" target="_blank"
@@ -264,6 +264,7 @@
                             View My Stack →
                         </a>
                         <a href="https://fabblogs.substack.com/" target="_blank"
+                           onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })"
                            style="border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.65);padding:12px 28px;border-radius:100px;font-size:13px;font-weight:600;letter-spacing:.05em;text-decoration:none;transition:all .2s;"
                            onmouseenter="this.style.borderColor='rgba(236,72,153,.4)';this.style.color='#fff'"
                            onmouseleave="this.style.borderColor='rgba(255,255,255,.12)';this.style.color='rgba(255,255,255,.65)'">
@@ -342,7 +343,7 @@
                     </p>
                     <p style="font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.65);line-height:1.85;">
                         I started a blog because I needed somewhere to track my learning visibly. Now it's a place where I build in public,
-                        share what I find confusing, and make it easier for the next person. <a href="https://fabblogs.substack.com/" target="_blank" style="color:#ec4899;font-weight:600;text-decoration:underline;">Essays from a forever learner to your inbox.</a>
+                        share what I find confusing, and make it easier for the next person. <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" style="color:#ec4899;font-weight:600;text-decoration:underline;">Essays from a forever learner to your inbox.</a>
                     </p>
                     <p style="font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.65);line-height:1.85;">
                         I've lived in 4 countries, own a sassy bulldog named Prince, and on my off hours I'm usually reading,
@@ -516,7 +517,7 @@
             <div style="display:flex;gap:24px;">
                 <a href="{{ route('skills') }}" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.2);text-decoration:none;transition:color .2s;" onmouseenter="this.style.color='#ec4899'" onmouseleave="this.style.color='rgba(255,255,255,.2)'">Skills</a>
                 <a href="{{ route('projects') }}" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.2);text-decoration:none;transition:color .2s;" onmouseenter="this.style.color='#ec4899'" onmouseleave="this.style.color='rgba(255,255,255,.2)'">Projects</a>
-                <a href="https://fabblogs.substack.com/" target="_blank" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.2);text-decoration:none;transition:color .2s;" onmouseenter="this.style.color='#ec4899'" onmouseleave="this.style.color='rgba(255,255,255,.2)'">Substack</a>
+                <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.2);text-decoration:none;transition:color .2s;" onmouseenter="this.style.color='#ec4899'" onmouseleave="this.style.color='rgba(255,255,255,.2)'">Substack</a>
             </div>
         </div>
 

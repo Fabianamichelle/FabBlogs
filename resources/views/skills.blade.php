@@ -191,7 +191,7 @@
             <span class="text-xs tracking-wider hidden sm:block" style="color: rgba(255,255,255,0.2);">fabianamichellee@gmail.com</span>
             <nav class="flex items-center gap-6 sm:gap-8">
                 <a href="{{ route('about.me') }}" class="nav-link">About</a>
-                <a href="https://fabblogs.substack.com/" target="_blank" class="nav-link hidden sm:inline">Blog</a>
+                <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" class="nav-link hidden sm:inline">Blog</a>
                 <a href="{{ route('projects') }}" class="nav-link hidden sm:inline">Work</a>
                 <a href="{{ route('skills') }}" class="nav-link active">Skills</a>
                 <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" target="_blank"

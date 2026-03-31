@@ -41,6 +41,8 @@
             </a>
 
             <a href="https://fabblogs.substack.com/"
+              target="_blank"
+              onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })"
               class="inline-flex items-center rounded-lg bg-white px-4 py-2.5 text-sm font-medium text-black shadow-md hover:bg-black hover:text-white">
               Subscribe
             </a>
@@ -114,6 +116,8 @@
                 </div>
 
                 <a href="https://fabblogs.substack.com/"
+                    target="_blank"
+                    onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })"
                     class="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-white hover:!text-black hover:shadow-lg hover:ring-2 hover:ring-indigo-500/70">
                     Get updates
                 </a>

@@ -37,7 +37,7 @@
 
                 <nav class="hidden items-center gap-6 text-sm text-zinc-700 dark:text-zinc-300 md:flex" aria-label="Primary">
                     <a href="{{ route('about.me') }}" class="hover:text-zinc-900 text-white">About Me</a>
-                    <a href="https://fabblogs.substack.com/" class="hover:text-zinc-900 text-white">SubStack</a>
+                    <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" class="hover:text-zinc-900 text-white">SubStack</a>
                     <a href="https://www.youtube.com/@FabBuilds" class="hover:text-zinc-900 text-white">YouTube</a>
                 </nav>
 
@@ -59,7 +59,7 @@
                     <div class="absolute right-0 mt-2 w-56 overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-lg dark:border-zinc-800 dark:bg-zinc-950 dark:text-white">
                         <div class="flex flex-col p-2 text-sm">
                             <a href="{{ route('about.me') }}" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">About Me</a>
-                            <a href="https://fabblogs.substack.com/" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">SubStack</a>
+                            <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">SubStack</a>
                             <a href="https://www.youtube.com/@FabBuilds" class="rounded-lg px-3 py-2 hover:bg-zinc-50 dark:hover:bg-white/5">YouTube</a>
                         </div>
                     </div>
@@ -99,8 +99,10 @@
                       </a>
                         <a
                         href="https://fabblogs.substack.com/"
+                        target="_blank"
+                        onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })"
                         class="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-pink-500 dark:bg-pink dark:text-black dark:hover:bg-pink-500 w-full sm:w-auto">
-                        Subscribe to Newsletter 
+                        Subscribe to Newsletter
                       </a>
 
                     </div>
@@ -261,7 +263,7 @@
                     </div>
 
                     <div class="lg:col-span-5 space-y-3">
-                        <a href="https://fabblogs.substack.com/" class="inline-flex w-full items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 sm:w-auto dark:!bg-pink dark:text-black dark:hover:bg-pink-500">
+                        <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" class="inline-flex w-full items-center justify-center rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 sm:w-auto dark:!bg-pink dark:text-black dark:hover:bg-pink-500">
                             Join the newsletter
                         </a>
             
@@ -279,7 +281,7 @@
                 <div class="flex items-center gap-4">
                     
                     <a href="{{ route('posts.index') }}" class="hover:text-zinc-900 dark:hover:text-white">Posts</a>
-                    <a href="https://fabblogs.substack.com/" class="hover:text-zinc-900 dark:hover:text-white">Newsletter</a>
+                    <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" class="hover:text-zinc-900 dark:hover:text-white">Newsletter</a>
                 </div>
             </div>
         </footer>
