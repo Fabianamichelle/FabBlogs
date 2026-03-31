@@ -1,4 +1,39 @@
-<x-layouts.app :title="$post->title">
+@php
+    $postDescription = $post->excerpt ?? Str::limit(strip_tags($post->body), 160);
+    $postKeywords    = implode(', ', array_filter(['software engineering', 'blog', $post->category, 'Fabiana Mendoza', 'Laravel']));
+@endphp
+
+<x-layouts.app
+    :title="$post->title"
+    :description="$postDescription"
+    :keywords="$postKeywords"
+    :canonical="route('posts.show', $post)"
+    ogType="article"
+>
+    @push('seo')
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ addslashes($post->title) }}",
+        "description": "{{ addslashes($postDescription) }}",
+        "datePublished": "{{ $post->published_at?->toIso8601String() }}",
+        "dateModified": "{{ $post->updated_at->toIso8601String() }}",
+        "url": "{{ route('posts.show', $post) }}",
+        "author": {
+            "@type": "Person",
+            "name": "Fabiana Mendoza",
+            "url": "{{ route('about.me') }}"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "Fabiana Mendoza",
+            "url": "{{ url('/') }}"
+        }
+    }
+    </script>
+    @endpush
+
     <div class="mx-auto max-w-3xl space-y-6 px-4 py-8 sm:px-6">
         <a href="{{ route('posts.index') }}" class="text-sm font-medium text-pink-900 hover:underline hover:text-white">
             ← Back to posts

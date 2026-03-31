@@ -1,4 +1,9 @@
-<x-layouts.app title="Posts">
+<x-layouts.app
+    title="Posts"
+    description="Explore all posts by Fabiana Mendoza on software engineering, Laravel, algorithms, and tech concepts. Unfiltered thoughts from a junior engineer building in public."
+    keywords="software engineering, Laravel, PHP, blog, programming, algorithms, tech, junior developer"
+    :canonical="route('posts.index')"
+>
   <main id="content">
     {{-- Background like home --}}
     <div class="pointer-events-none absolute inset-0 -z-10">

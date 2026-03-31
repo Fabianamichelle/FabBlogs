@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    @include('partials.head', ['title' => 'Skills — Fabiana'])
-    <meta name="description" content="Fabiana Mendoza's tech stack and skills." />
+    @include('partials.head', [
+        'title'       => 'Skills',
+        'description' => 'Fabiana Mendoza\'s full tech stack — Laravel, PHP, Livewire, JavaScript, Tailwind CSS, MySQL, and more. A junior software engineer building modern web applications.',
+        'keywords'    => 'tech stack, skills, Laravel, PHP, Livewire, JavaScript, Tailwind CSS, MySQL, web development, Fabiana Mendoza',
+        'canonical'   => route('skills'),
+    ])
     <style>
         body { background: #050507; color: #fff; }
 

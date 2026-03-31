@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
-        @include('partials.head', ['title' => 'Fabblogs'])
-        <meta name="description" content="Fabblogs is a personal blog for engineering, and theoretical concepts" />
+        @include('partials.head', [
+            'title'       => 'Home',
+            'description' => 'Fabblogs — a personal blog by Fabiana Mendoza. Software engineering, Laravel, algorithms, and raw unfiltered thoughts from a junior developer building in public.',
+            'keywords'    => 'Fabblogs, software engineering, Laravel, blog, programming, junior developer, Fabiana Mendoza, tech blog',
+            'canonical'   => route('home'),
+        ])
     </head> 
     <script>
         window.addEventListener('text-color-changed', e => {
@@ -209,7 +213,7 @@
                 <div class="mt-10 grid gap-4 md:grid-cols-3">
                     <div class="rounded-2xl border border-orange-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400">
-                            <img src="{{ asset('images/cld-server-svgrepo-com.svg') }}" alt="server icon">
+                            <img src="{{ asset('images/cld-server-svgrepo-com.svg') }}" alt="Cloud server icon representing learning through association">
                         </div>
                         <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:!text-white text-left">Learning Through Association</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
@@ -222,7 +226,7 @@
 
                     <div class="rounded-2xl border border-orange-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950 dark:text-white">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-fuchsia-500/10 text-fuchsia-700 dark:text-fuchsia-400">
-                            <img src="{{ asset('images/com-keyboard-svgrepo-com.svg') }}" alt="keyboard icon">
+                            <img src="{{ asset('images/com-keyboard-svgrepo-com.svg') }}" alt="Keyboard icon representing learning by doing">
                         </div>
                         <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:!text-white text-left">Learning By Doing</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
@@ -233,7 +237,7 @@
 
                     <div class="rounded-2xl border border-orange-200 bg-white p-6 shadow-sm text-center md:text-left dark:border-zinc-800 dark:bg-zinc-950 dark:text-white">
                         <div class="flex size-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-700 dark:text-sky-400">
-                            <img src="{{ asset('images/com-laptop-code-svgrepo-com.svg') }}" alt="Laptop Code Icon">
+                            <img src="{{ asset('images/com-laptop-code-svgrepo-com.svg') }}" alt="Laptop with code icon representing critical thinking in software engineering">
                         </div>
                         <h3 class="mt-4 text-base font-semibold text-zinc-900 dark:!text-white text-left">True Critical Thinking</h3>
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">

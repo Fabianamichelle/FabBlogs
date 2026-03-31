@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    @include('partials.head', ['title' => 'About — Fabiana'])
-    <meta name="description" content="Fabiana Mendoza — Junior Software Engineer, SaaS background, builder of things." />
+    @include('partials.head', [
+        'title'       => 'About',
+        'description' => 'Fabiana Mendoza is a Junior Software Engineer with a SaaS background. She builds web apps with Laravel and Livewire, shares what she learns, and writes about engineering concepts without a filter.',
+        'keywords'    => 'Fabiana Mendoza, junior software engineer, Laravel developer, SaaS, about me, software engineering, web developer',
+        'canonical'   => route('about.me'),
+    ])
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fabiana Mendoza",
+        "url": "{{ route('about.me') }}",
+        "jobTitle": "Junior Software Engineer",
+        "description": "Junior Software Engineer with a SaaS background building web applications with Laravel and Livewire.",
+        "sameAs": [
+            "https://www.youtube.com/@FabBuilds",
+            "https://fabblogs.substack.com/"
+        ]
+    }
+    </script>
     <style>
         *, *::before, *::after { box-sizing: border-box; }
         html { scroll-behavior: smooth; }

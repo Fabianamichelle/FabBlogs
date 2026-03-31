@@ -1,4 +1,9 @@
-<x-layouts.app title="Projects">
+<x-layouts.app
+    title="Projects"
+    description="Portfolio of projects built by Fabiana Mendoza — including FabBlogs, Chirper, Alcove, and more. Built with Laravel, Livewire, and modern web tech."
+    keywords="portfolio, projects, Laravel, Livewire, PHP, web development, Fabiana Mendoza, FabBlogs"
+    :canonical="route('projects')"
+>
 
   <style>
     @keyframes marquee {

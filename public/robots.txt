@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /dashboard
+Disallow: /admin/
+Disallow: /settings/
+
+Sitemap: https://fabblogs.laravel.cloud/sitemap.xml
