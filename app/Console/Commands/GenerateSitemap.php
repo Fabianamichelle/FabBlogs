@@ -16,11 +16,11 @@ class GenerateSitemap extends Command
     public function handle(): void
     {
         $sitemap = Sitemap::create()
-            ->add(Url::create('/')->setPriority(1.0)->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY))
-            ->add(Url::create('/posts')->setPriority(0.9)->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY))
-            ->add(Url::create('/projects')->setPriority(0.8)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY))
-            ->add(Url::create('/skills')->setPriority(0.8)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY))
-            ->add(Url::create('/about')->setPriority(0.7)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY));
+            ->add(Url::create(route('home'))->setPriority(1.0)->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY))
+            ->add(Url::create(route('posts.index'))->setPriority(0.9)->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY))
+            ->add(Url::create(route('projects'))->setPriority(0.8)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY))
+            ->add(Url::create(route('skills'))->setPriority(0.8)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY))
+            ->add(Url::create(route('about.me'))->setPriority(0.7)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY));
 
         Post::published()->each(function (Post $post) use ($sitemap) {
             $sitemap->add(
