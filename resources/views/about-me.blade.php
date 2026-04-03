@@ -22,6 +22,7 @@
     }
     </script>
     <style>
+    @verbatim
         *, *::before, *::after { box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { background: #050507; color: #fff; overflow-x: hidden; font-family: 'Instrument Sans', sans-serif; }
@@ -144,6 +145,7 @@
         @keyframes ping {
             75%,100%{transform:scale(2);opacity:0}
         }
+    @endverbatim
     </style>
 </head>
 <body class="min-h-screen antialiased">
@@ -314,11 +316,13 @@
         </section>
 
         <style>
+            @verbatim
             @keyframes scrollLine {
                 0%   { opacity:0; transform:scaleY(0); transform-origin:top; }
                 50%  { opacity:1; transform:scaleY(1); }
                 100% { opacity:0; transform:scaleY(1); transform-origin:bottom; }
             }
+            @endverbatim
         </style>
 
         {{-- Divider --}}
