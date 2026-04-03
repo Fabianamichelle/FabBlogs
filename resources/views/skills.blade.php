@@ -8,6 +8,7 @@
         'canonical'   => route('skills'),
     ])
     <style>
+    @verbatim
         body { background: #050507; color: #fff; }
 
         @keyframes orbFloat {
@@ -140,6 +141,7 @@
             background: radial-gradient(ellipse, rgba(236,72,153,0.09) 0%, transparent 70%);
             pointer-events: none;
         }
+    @endverbatim
     </style>
 </head>
 <body class="min-h-screen antialiased overflow-x-hidden">

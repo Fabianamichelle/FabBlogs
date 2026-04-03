@@ -6,10 +6,12 @@
 >
 
   <style>
+    @verbatim
     @keyframes marquee {
       from { transform: translateX(0); }
       to   { transform: translateX(-50%); }
     }
+    @endverbatim
     .marquee-track { animation: marquee 22s linear infinite; }
     .marquee-track:hover { animation-play-state: paused; }
     [data-track]::-webkit-scrollbar { display: none; }
