@@ -9,14 +9,14 @@
     ])
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Person",
+        "@@context": "https://schema.org",
+        "@@type": "Person",
         "name": "Fabiana Mendoza",
         "url": "{{ route('about.me') }}",
         "jobTitle": "Junior Software Engineer",
         "description": "Junior Software Engineer with a SaaS background building web applications with Laravel and Livewire.",
         "sameAs": [
-            "https://www.youtube.com/@FabBuilds",
+            "https://www.youtube.com/@@FabBuilds",
             "https://fabblogs.substack.com/"
         ]
     }

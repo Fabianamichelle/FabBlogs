@@ -13,20 +13,20 @@
     @push('seo')
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
+        "@@context": "https://schema.org",
+        "@@type": "BlogPosting",
         "headline": "{{ addslashes($post->title) }}",
         "description": "{{ addslashes($postDescription) }}",
         "datePublished": "{{ $post->published_at?->toIso8601String() }}",
         "dateModified": "{{ $post->updated_at->toIso8601String() }}",
         "url": "{{ route('posts.show', $post) }}",
         "author": {
-            "@type": "Person",
+            "@@type": "Person",
             "name": "Fabiana Mendoza",
             "url": "{{ route('about.me') }}"
         },
         "publisher": {
-            "@type": "Person",
+            "@@type": "Person",
             "name": "Fabiana Mendoza",
             "url": "{{ url('/') }}"
         }
