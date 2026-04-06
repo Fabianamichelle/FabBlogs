@@ -165,9 +165,9 @@
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
         </a>
-        <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" target="_blank" class="social-link" title="Upwork">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.543-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/>
+        <a href="https://fabbuilds.org/" target="_blank" class="social-link" title="FabBuilds — Services">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
             </svg>
         </a>
     </div>
@@ -196,7 +196,7 @@
                 <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" class="nav-link hidden sm:inline">Blog</a>
                 <a href="{{ route('projects') }}" class="nav-link hidden sm:inline">Work</a>
                 <a href="{{ route('skills') }}" class="nav-link hidden sm:inline">Skills</a>
-                <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" target="_blank"
+                <a href="https://fabbuilds.org/" target="_blank"
                    class="rounded-full px-4 py-1.5 text-xs font-semibold tracking-wider uppercase transition hidden sm:inline-block"
                    style="border:1px solid rgba(236,72,153,.5);color:#ec4899;background:rgba(236,72,153,.07);"
                    onmouseenter="this.style.background='rgba(236,72,153,.18)'"
@@ -215,7 +215,7 @@
                             <a href="https://fabblogs.substack.com/" target="_blank" onclick="gtag('event', 'substack_click', { event_category: 'engagement', event_label: 'substack_signup' })" class="rounded-lg px-3 py-2" style="color:rgba(255,255,255,.7);" onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,.7)'">Blog</a>
                             <a href="{{ route('projects') }}" class="rounded-lg px-3 py-2" style="color:rgba(255,255,255,.7);" onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,.7)'">Work</a>
                             <a href="{{ route('skills') }}" class="rounded-lg px-3 py-2" style="color:rgba(255,255,255,.7);" onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,.7)'">Skills</a>
-                            <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" target="_blank"
+                            <a href="https://fabbuilds.org/" target="_blank"
                                class="rounded-lg px-3 py-2 mt-1 text-center font-semibold tracking-wider uppercase"
                                style="color:#ec4899;border:1px solid rgba(236,72,153,.4);background:rgba(236,72,153,.07);">Hire me ↗</a>
                         </div>
@@ -394,7 +394,7 @@
                      'I use Python to build lightweight APIs, automate repetitive workflows, and write scripts that save time. Whether it\'s hitting a third-party API, processing data, or automating a task I\'d otherwise do manually. Python is my go-to for getting things done quickly and cleanly. I\'m comfortable working with libraries like requests, Flask, and standard tooling for scripting and file I/O.'],
                     ['TECHNICAL WRITER',       'Substack · Fabblogs',
                      'I write about software the way I wish someone had explained it to me. Clearly, honestly, and without unnecessary jargon. My writing covers things I\'m actively learning: Laravel internals, debugging sessions, project builds, and concepts that took me longer than expected to understand. Everything I publish is 100% human-written.Just real experience put into words.'],
-                    ['FREELANCER',             'Upwork · Open to Projects',
+                    ['FREELANCER',             'FabBuilds · Open to Projects',
                      'I\'m open to junior roles, freelance web projects, and collaborations. I can build full-stack Laravel apps, set up APIs, automate workflows with Python, or help with frontend work. My background in SaaS sales means I can communicate clearly with clients, understand what they actually need, and translate that into working software. Without the back-and-forth that slows projects down.'],
                 ] as [$title, $sub, $body])
                 <div class="role-box reveal" x-on:click="open === '{{ $title }}' ? open = null : open = '{{ $title }}'">
@@ -504,11 +504,11 @@
                            onmouseenter="this.style.opacity='.8'" onmouseleave="this.style.opacity='1'">
                             💌 Email Me
                         </a>
-                        <a href="https://www.upwork.com/freelancers/~018cdafd413e07ceb5?mp_source=share" target="_blank"
+                        <a href="https://fabbuilds.org/" target="_blank"
                            style="border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.65);padding:14px 32px;border-radius:100px;font-size:13px;font-weight:600;letter-spacing:.06em;text-decoration:none;transition:all .2s;"
                            onmouseenter="this.style.borderColor='rgba(236,72,153,.4)';this.style.color='#fff'"
                            onmouseleave="this.style.borderColor='rgba(255,255,255,.12)';this.style.color='rgba(255,255,255,.65)'">
-                            Hire on Upwork ↗
+                            View My Services ↗
                         </a>
                     </div>
                 </div>
