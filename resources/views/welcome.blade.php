@@ -271,17 +271,13 @@
                                 Need a developer?
                             </h2>
                             <p class="max-w-md text-sm leading-relaxed text-zinc-400">
-                                I build web apps, APIs, and automations — Laravel, Python, and more. Visit my services site to see what I offer and how to work with me.
+                                I build web apps, APIs, and automations. Laravel, Python, and more. Visit my services site to see what I offer and how to work with me.
                             </p>
                         </div>
                         <div class="flex flex-col gap-3 sm:flex-shrink-0 sm:flex-row sm:items-center">
                             <a href="https://fabbuilds.org/" target="_blank"
                                class="inline-flex items-center justify-center gap-2 rounded-xl bg-pink-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-pink-400">
                                 View My Services ↗
-                            </a>
-                            <a href="mailto:fabianamichellee@gmail.com"
-                               class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/20">
-                                💌 Email Me
                             </a>
                         </div>
                     </div>
