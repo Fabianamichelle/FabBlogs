@@ -255,31 +255,32 @@
 
             {{-- ── HIRE ME / SERVICES BANNER ── --}}
             <section class="mx-auto max-w-6xl px-4 pb-6 sm:px-6">
-                <div class="relative overflow-hidden rounded-3xl border border-pink-200/60 bg-gradient-to-br from-pink-50 via-fuchsia-50/60 to-white p-8 sm:p-10 dark:border-pink-900/30 dark:from-pink-950/25 dark:via-fuchsia-950/20 dark:to-zinc-950">
-                    <div class="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-pink-400/10 blur-3xl"></div>
+                <div class="relative overflow-hidden rounded-3xl border border-pink-500/30 bg-zinc-900 p-8 sm:p-10">
+                    <div class="pointer-events-none absolute -right-10 -top-10 h-64 w-64 rounded-full bg-pink-500/20 blur-3xl"></div>
+                    <div class="pointer-events-none absolute -bottom-10 -left-10 h-48 w-48 rounded-full bg-fuchsia-500/10 blur-3xl"></div>
                     <div class="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-                        <div class="space-y-2">
-                            <p class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-pink-500">
+                        <div class="space-y-3">
+                            <p class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-pink-400">
                                 <span class="relative flex size-2">
                                     <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-pink-400 opacity-75"></span>
                                     <span class="relative inline-flex size-2 rounded-full bg-pink-500"></span>
                                 </span>
                                 Available for hire
                             </p>
-                            <h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">
+                            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">
                                 Need a developer?
                             </h2>
-                            <p class="max-w-md text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                                I build web apps, APIs, and automations — Laravel, Python, and more. Check out my services site for what I offer and how to work with me.
+                            <p class="max-w-md text-sm leading-relaxed text-zinc-400">
+                                I build web apps, APIs, and automations — Laravel, Python, and more. Visit my services site to see what I offer and how to work with me.
                             </p>
                         </div>
                         <div class="flex flex-col gap-3 sm:flex-shrink-0 sm:flex-row sm:items-center">
                             <a href="https://fabbuilds.org/" target="_blank"
-                               class="inline-flex items-center justify-center gap-2 rounded-xl bg-pink-500 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-pink-600">
+                               class="inline-flex items-center justify-center gap-2 rounded-xl bg-pink-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-pink-400">
                                 View My Services ↗
                             </a>
                             <a href="mailto:fabianamichellee@gmail.com"
-                               class="inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white px-6 py-3 text-sm font-semibold text-zinc-700 shadow-sm transition hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800">
+                               class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/20">
                                 💌 Email Me
                             </a>
                         </div>
@@ -341,33 +342,33 @@
             x-transition:leave="transition ease-in duration-200"
             x-transition:leave-start="opacity-100 translate-y-0"
             x-transition:leave-end="opacity-0 translate-y-4"
-            class="fixed bottom-6 right-6 z-50 w-80 overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-2xl dark:border-zinc-700 dark:bg-zinc-900"
+            class="fixed bottom-6 right-6 z-50 w-80 overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl"
             style="display:none;"
         >
-            <div class="flex items-center justify-between border-b border-zinc-100 px-4 py-3 dark:border-zinc-800">
-                <p class="text-xs font-semibold tracking-widest uppercase text-pink-500">Hey there 👋</p>
-                <button @click="dismiss()" class="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition">
+            <div class="flex items-center justify-between border-b border-white/10 px-4 py-3">
+                <p class="text-xs font-semibold tracking-widest uppercase text-pink-400">Hey there 👋</p>
+                <button @click="dismiss()" class="text-zinc-500 hover:text-white transition">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                 </button>
             </div>
             <div class="p-4 space-y-3">
-                <p class="text-sm font-medium text-zinc-800 dark:text-zinc-100">What brings you here today?</p>
-                <p class="text-xs text-zinc-500 dark:text-zinc-400">I'll point you in the right direction.</p>
+                <p class="text-sm font-semibold text-white">What brings you here today?</p>
+                <p class="text-xs text-zinc-400">I'll point you in the right direction.</p>
                 <div class="flex flex-col gap-2 pt-1">
                     <a href="https://fabblogs.substack.com/" target="_blank" @click="dismiss()"
-                       class="flex items-center gap-3 rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm font-medium text-zinc-700 transition hover:border-pink-300 hover:bg-pink-50 hover:text-pink-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700">
+                       class="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-zinc-200 transition hover:border-white/20 hover:bg-white/10 hover:text-white">
                         <span class="text-base">📝</span>
                         <span>Read the Blog</span>
-                        <span class="ml-auto text-xs text-zinc-400">fabblogs</span>
+                        <span class="ml-auto text-xs text-zinc-500">fabblogs</span>
                     </a>
                     <a href="https://fabbuilds.org/" target="_blank" @click="dismiss()"
-                       class="flex items-center gap-3 rounded-xl border border-pink-200 bg-pink-50 px-4 py-3 text-sm font-medium text-pink-700 transition hover:bg-pink-100 dark:border-pink-900/50 dark:bg-pink-950/30 dark:text-pink-300 dark:hover:bg-pink-950/50">
+                       class="flex items-center gap-3 rounded-xl border border-pink-500/40 bg-pink-500/10 px-4 py-3 text-sm font-medium text-pink-300 transition hover:bg-pink-500/20 hover:text-pink-200">
                         <span class="text-base">💼</span>
                         <span>Hire Me / View Services</span>
-                        <span class="ml-auto text-xs text-pink-400">fabbuilds</span>
+                        <span class="ml-auto text-xs text-pink-500">fabbuilds</span>
                     </a>
                 </div>
-                <button @click="dismiss()" class="w-full pt-1 text-xs text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition">
+                <button @click="dismiss()" class="w-full pt-1 text-xs text-zinc-600 hover:text-zinc-400 transition">
                     Just browsing — close
                 </button>
             </div>
